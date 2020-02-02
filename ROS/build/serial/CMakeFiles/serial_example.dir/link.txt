@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/serial_example.dir/examples/serial_example.cc.o  -o /home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial_example -Wl,-rpath,/home/ubuntu/TATICOMA/ROS/devel/lib /home/ubuntu/TATICOMA/ROS/devel/lib/libserial.so -lrt -lpthread 

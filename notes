@@ -1,0 +1,36 @@
+##########################################
+
+export LC_NUMERIC="en_US.UTF-8"
+
+
+rqt_graph --force-discover
+
+sudo apt-get install ros-melodic-rqt
+sudo apt-get install ros-melodic-qt-gui
+
+##########################################
+
+sudo usermod -a -G dialout username
+sudo chmod a+rw /dev/ttyUSB0
+ls -l /dev/ttyUSB0
+
+ls -ld /run/lock
+cp /usr/lib/tmpfiles.d/legacy.conf /etc/tmpfiles.d/
+chmod /run/lock 0775 root lock
+
+ls -ld /var/lock
+chmod o+rwx /var/lock
+
+##########################################
+
+sudo apt-get install ros-indigo-rosserial-arduino
+sudo apt-get install ros-indigo-rosserial
+
+rosrun rosserial_arduino make_libraries.py .
+rosrun rosserial_client make_libraries  ~/Arduino/libraries /taticoma_msgs
+
+rosrun rosserial_python serial_node.py /dev/ttyUSB0
+
+
+##########################################
+

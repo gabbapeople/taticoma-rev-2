@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/TATICOMA/ROS/devel
+
+Name: dynamixel_workbench_toolbox
+Description: Description of dynamixel_workbench_toolbox
+Version: 2.0.0
+Cflags: -I/home/ubuntu/TATICOMA/ROS/src/dynamixel_workbench_toolbox/include
+Libs: -L/home/ubuntu/TATICOMA/ROS/devel/lib -ldynamixel_workbench_toolbox
+Requires: roscpp dynamixel_sdk

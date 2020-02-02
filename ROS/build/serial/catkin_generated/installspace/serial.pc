@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/TATICOMA/ROS/install
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/ubuntu/TATICOMA/ROS/install/include
+Libs: -L/home/ubuntu/TATICOMA/ROS/install/lib -lserial -lrt -lpthread
+Requires: 

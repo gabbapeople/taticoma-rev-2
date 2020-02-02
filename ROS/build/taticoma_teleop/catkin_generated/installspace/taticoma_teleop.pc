@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/TATICOMA/ROS/install
+
+Name: taticoma_teleop
+Description: Description of taticoma_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ubuntu/TATICOMA/ROS/install/lib 
+Requires: serial std_msgs

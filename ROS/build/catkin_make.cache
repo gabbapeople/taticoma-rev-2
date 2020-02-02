@@ -1,0 +1,2 @@
+dynamixel_sdk:dynamixel_workbench:dynamixel_workbench_controllers:dynamixel_workbench_msgs:dynamixel_workbench_toolbox:serial:taticoma_body_kinematics:taticoma_dynamixel_controller:taticoma_gait:taticoma_joint_publisher:taticoma_leg_kinematics:taticoma_msgs:taticoma_teleop
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/TATICOMA/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/TATICOMA/ROS/install -G Unix Makefiles
