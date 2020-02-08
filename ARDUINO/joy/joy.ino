@@ -2,6 +2,8 @@
 #include <PS4USB.h>
 #include <SPI.h>
 
+#include "filter_sred.h"
+
 // GLOBAL STATES
 
 #define VREF 3.3f
@@ -17,6 +19,11 @@ uint16_t joyBatInt1;
 uint16_t joyBatInt2;
 float joyBatPercent;
 uint16_t joyBatPercentInt;
+
+FILTER_REG Filter1;
+uint16_t adc1;
+uint16_t adcFilterBuff1[COUNT_FILTER];
+uint16_t adcFilter1;
 
 uint8_t joyState = 0;
 uint32_t feedbackCount = 0;
@@ -101,8 +108,11 @@ bool receiveFlag = true;
 // GLOBAL OPERATION
 
 void joyVoltageHandle() {
-    uint16_t analogBatVoltage = analogRead(JOY_BAT_PIN);
-    float batVoltage = analogBatVoltage * (VREF / 1023.0);
+  
+    adc1 = analogRead(JOY_BAT_PIN);
+    adcFilter1 = filter_sred(adc1, adcFilterBuff1, &Filter1);
+
+    float batVoltage = adcFilter1 * (VREF / 4095.0);
     joyBatVoltage = batVoltage * (JOY_R1 + JOY_R2) / JOY_R2;
 
     joyBatInt1 = joyBatVoltage;
@@ -429,10 +439,14 @@ void gaitModeControl() {
 void setup() {
     Usb.Init();
     setBuffers();
-    pinMode(JOY_BAT_PIN, OUTPUT);
+    
     Serial2.begin(9600);
     Serial3.begin(57600);
 
+    analogReadResolution(12);
+    pinMode(JOY_BAT_PIN, OUTPUT);
+    Filter1.Val = 0;
+    
     counter = 0;
 }
 
