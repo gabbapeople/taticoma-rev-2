@@ -4,12 +4,26 @@
 
 // GLOBAL STATES
 
-uint8_t joyState = 0;
+#define VREF 3.3f
+#define JOY_BAT_PIN A8
 
+#define JOY_R1 336
+#define JOY_R2 645
+#define JOY_MIN_V 3.7f
+#define JOY_MAX_V 4.2f
+
+float joyBatVoltage;
+uint16_t joyBatInt1;
+uint16_t joyBatInt2;
+float joyBatPercent;
+uint16_t joyBatPercentInt;
+
+uint8_t joyState = 0;
 uint32_t feedbackCount = 0;
 uint32_t msgSendCount = 0;
 uint32_t goodPackages = 0;
 uint32_t badPackages = 0;
+
 
 // PS4 VAL
 
@@ -84,6 +98,23 @@ bool receiveFlag = true;
 
 // END PS4 VAL
 
+// GLOBAL OPERATION
+
+void joyVoltageHandle() {
+    uint16_t analogBatVoltage = analogRead(JOY_BAT_PIN);
+    float batVoltage = analogBatVoltage * (VREF / 1023.0);
+    joyBatVoltage = batVoltage * (JOY_R1 + JOY_R2) / JOY_R2;
+
+    joyBatInt1 = joyBatVoltage;
+    float tmpFrac = joyBatVoltage - joyBatInt1;
+    joyBatInt2 = trunc(tmpFrac * 100);
+
+    joyBatPercent = ((JOY_MIN_V - joyBatVoltage) * 100) / (JOY_MIN_V - JOY_MAX_V);
+    joyBatPercentInt = joyBatPercent;
+}
+
+// END GLOBAL OPERATION
+
 // NEXTION OPERATION
 
 void nextionEndComand() {
@@ -113,7 +144,11 @@ void nextionHandle() {
     nextionSendData("feedbackCount.val", String(feedbackCount, DEC));
     nextionSendData("msgSendCount.val", String(msgSendCount, DEC));
     nextionSendData("goodPackages.val", String(goodPackages, DEC));
-    nextionSendData("badPackages.val", String(badPackages, DEC));    
+    nextionSendData("badPackages.val", String(badPackages, DEC));
+
+    nextionSendData("joyBatInt1.val", String(joyBatInt1, DEC));  
+    nextionSendData("joyBatInt2.val", String(joyBatInt2, DEC));  
+    nextionSendData("joyBatPerInt.val", String(joyBatPercentInt, DEC));  
 }
 
 // END NEXTION OPERATION
@@ -394,7 +429,7 @@ void gaitModeControl() {
 void setup() {
     Usb.Init();
     setBuffers();
-    pinMode(A0, OUTPUT);
+    pinMode(JOY_BAT_PIN, OUTPUT);
     Serial2.begin(9600);
     Serial3.begin(57600);
 
@@ -402,6 +437,9 @@ void setup() {
 }
 
 void loop() {
+
+    joyVoltageHandle();
+    
     serialSend();
 
     Usb.Task();
