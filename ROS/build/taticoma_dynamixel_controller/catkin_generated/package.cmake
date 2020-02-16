@@ -1,7 +1,7 @@
 set(_CATKIN_CURRENT_PACKAGE "taticoma_dynamixel_controller")
 set(taticoma_dynamixel_controller_VERSION "0.0.0")
 set(taticoma_dynamixel_controller_MAINTAINER "gabbapeople <gabbapeople@mail.ru>")
-set(taticoma_dynamixel_controller_PACKAGE_FORMAT "2")
+set(taticoma_dynamixel_controller_PACKAGE_FORMAT "1")
 set(taticoma_dynamixel_controller_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(taticoma_dynamixel_controller_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")
 set(taticoma_dynamixel_controller_BUILDTOOL_DEPENDS "catkin")

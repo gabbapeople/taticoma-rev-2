@@ -24,7 +24,7 @@ void Teleop::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr &teleop
 		switch (teleop->mode) {
 		case MODE_MOVEMENT:
 
-			double K_ROLL = -0.22;
+			double K_ROLL = 0.22;
 			double K_PITCH = -0.22;
 			double K_YAW = 0.28;
 
@@ -65,7 +65,7 @@ void Teleop::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr &teleop
 					float a, b, xinv;
 					a = pow(teleop->axes[LY], 2);
 					b = pow(teleop->axes[LX], 2);
-					xinv = -1 * teleop->axes[LX];
+					xinv = 1 * teleop->axes[LX];
 
 					gait_command.fi = atan2(teleop->axes[LY], xinv);
 					gait_command.scale = pow(a + b, 0.5) > 1 ? 1 : pow(a + b, 0.5);
@@ -83,11 +83,13 @@ void Teleop::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr &teleop
 						break;
 					}	
 
-					gait_command.fi = (teleop->axes[RY] > 0) ? 3.14 / 2 : -3.14 / 2;
+					gait_command.fi = (teleop->axes[RY] >= 0) ? 3.14 / 2 : -3.14 / 2;
 					gait_command.scale = teleop->axes[RY];
 					if (gait_command.scale < 0)
 						gait_command.scale *= -1;
-					gait_command.alpha = ((teleop->axes[RX] > 0) ? -1 : 1) * 0.065 * (1 - gait_command.scale) + 0.19 * teleop->axes[RX];
+					gait_command.alpha = ((teleop->axes[RX] >= 0) ? -1 : 1) * 0.065 * (1 - gait_command.scale) + 0.19 * teleop->axes[RX];
+
+					//ROS_WARN("fi: %f scale: %f alpha: %f", gait_command.fi, gait_command.scale, gait_command.alpha);
 				}
 
 				gait_cmd_pub.publish(gait_command);

@@ -25,12 +25,22 @@ uint16_t adc1;
 uint16_t adcFilterBuff1[COUNT_FILTER];
 uint16_t adcFilter1;
 
-uint8_t joyState = 0;
 uint32_t feedbackCount = 0;
 uint32_t msgSendCount = 0;
 uint32_t goodPackages = 0;
 uint32_t badPackages = 0;
 
+uint8_t joyState = 0;
+uint8_t feedState = 0;
+
+// END GLOBAL STATES
+
+// TATICOMA STATES
+
+uint8_t taticomaMode = 0;
+uint8_t taticomaGaitMode = 0;
+
+// END TATICOMA STATES
 
 // PS4 VAL
 
@@ -98,9 +108,6 @@ uint8_t originalChecksum;
 uint8_t* sendBuffer3;
 uint8_t* readBuffer3;
 
-uint8_t mode = 0;
-uint8_t gait_mode = 0;
-
 bool receiveFlag = true;
 
 // END PS4 VAL
@@ -148,16 +155,12 @@ void nextionSendData(String dev, String data) {
 }
 
 void nextionHandle() {
-    switch (joyState){
-        case 0:
-            nextionSendData("joyState.val", "0");
-            break;
-        case 1:
-            nextionSendData("joyState.val", "1");
-            break;
-        default:
-            break;                              
-    }
+
+    nextionSendData("joyState.val", String(joyState, DEC));
+    nextionSendData("feedState.val", String(feedState, DEC));
+
+    nextionSendData("taticomaMode.val", String(taticomaMode, DEC));
+    nextionSendData("taticomaGMode.val", String(taticomaGaitMode, DEC));
 
     nextionSendData("feedbackCount.val", String(feedbackCount, DEC));
     nextionSendData("msgSendCount.val", String(msgSendCount, DEC));
@@ -218,13 +221,13 @@ void sendMsg(uint8_t cmd, uint8_t data) {
 
 void parseMsg(uint8_t feed, uint8_t data) {
     if (feed == FEED_MODE) {
-        if (mode != data) {
-            mode = data;
+        if (taticomaMode != data) {
+            taticomaMode = data;
         }
     }
     if (feed == FEED_GAIT_MODE) {
-        if (gait_mode != data) {
-            gait_mode = data;
+        if (taticomaGaitMode != data) {
+            taticomaGaitMode = data;
         }
     }
 }
@@ -282,13 +285,6 @@ void checkPSUpdates() {
 }
 
 void serialSend() {
-
-    if (receiveFlag == false) {
-        if ((now() - lastMsgTime) >= 10) {
-            receiveFlag = true;
-        }
-    }
-
     if (receiveFlag == true) {
         switch (counter) {
         case 0:
@@ -412,10 +408,17 @@ void serialSend() {
             break;
         }
     }
+
+    if (receiveFlag == false) {
+        if ((now() - lastMsgTime) >= 1000) {
+            feedState = 0;
+            receiveFlag = true;
+        }
+    }
 }
 
-void modeControl() {
-    switch (mode) {
+void ps4LedControl() {
+    switch (taticomaMode) {
     case 0:
         PS4.setLed(Yellow);
         break;
@@ -429,17 +432,7 @@ void modeControl() {
         PS4.setLed(Green);
         break;
     }
-}
-
-void gaitModeControl() {
-    switch (gait_mode) {
-    case 0:
-        PS4.setLedFlash(0, 0);
-        break;
-    case 1:
-        PS4.setLedFlash(10, 10);
-        break;
-    }
+    PS4.setLedFlash(0, 0);
 }
 
 // END PS4 OPERATION
@@ -488,6 +481,7 @@ void serialEvent3() {
 
         if (_byte == FEEDBACK) {
             feedbackCount++;
+            feedState = 1;
             if (readMsg()) {
                 receiveFlag = true;
             }

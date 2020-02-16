@@ -41,8 +41,6 @@
 
   <!-- <rosparam param="source_list"> [taticoma_joint_publisher] </rosparam> -->
 
-  
-
   <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen"/>  -->
   <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen"/> -->
 
@@ -56,7 +54,7 @@
   <node name="taticoma_teleop_serial" pkg="taticoma_teleop" type="taticoma_teleop_serial" output="screen"/>
   <node name="taticoma_teleop" pkg="taticoma_teleop" type="taticoma_teleop" output="screen"/>
 
-  <node name="taticoma_dynamixel_controller" pkg="taticoma_dynamixel_controller" type="taticoma_dynamixel_controller" output="screen"/>
+  <include file="$(find taticoma_description)/launch/dynamixel/taticoma_dynamixel_controller.launch" />
 
   <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> -->
 

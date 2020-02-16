@@ -1,8 +1,9 @@
 <launch>
 
-    <param name="dynamixel_serial_port"         type="string" value="/dev/ttyUSB1"/>
-    <param name="dynamixel_serial_baudrate"     type="int"    value="1000000"/> 
- 
-  <node name="taticoma_dynamixel_controller" pkg="taticoma_dynamixel_controller" type="taticoma_dynamixel_controller" output="screen"/>
+    
+    <include file="$(find dynamixel_setup)/launch/controller_manager.launch" />
+    <include file="$(find dynamixel_setup)/launch/controller_spawner.launch" />
+
+    <node name="taticoma_dynamixel_controller" pkg="taticoma_dynamixel_controller" type="dynamixel_controller" output="screen"/>
 
 </launch>

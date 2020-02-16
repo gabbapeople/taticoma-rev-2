@@ -80,17 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -111,6 +100,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -168,6 +168,141 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/build.make taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/build.make taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make taticoma_body_kinematics/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
 taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/rule:
 	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/rule
 .PHONY : taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/rule
@@ -181,6 +316,21 @@ body_kinematics: taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/rule
 body_kinematics/fast:
 	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/build.make taticoma_body_kinematics/CMakeFiles/body_kinematics.dir/build
 .PHONY : body_kinematics/fast
+
+# Convenience name for target.
+taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make taticoma_body_kinematics/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 src/body_kinematics.o: src/body_kinematics.cpp.o
 
@@ -217,11 +367,21 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... test"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... list_install_components"
-	@echo "... body_kinematics"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
 	@echo "... edit_cache"
+	@echo "... body_kinematics"
+	@echo "... test"
 	@echo "... rebuild_cache"
+	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... install"
 	@echo "... src/body_kinematics.o"
 	@echo "... src/body_kinematics.i"

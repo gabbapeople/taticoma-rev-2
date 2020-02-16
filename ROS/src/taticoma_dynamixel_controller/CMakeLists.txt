@@ -5,8 +5,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  dynamixel_sdk
-  dynamixel_workbench_toolbox
   taticoma_msgs
 )
 
@@ -17,9 +15,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME} src/taticoma_dynamixel_controller.cpp)
+add_executable(dynamixel_controller src/dynamixel_controller.cpp)
+target_link_libraries(dynamixel_controller ${catkin_LIBRARIES})
 
-target_link_libraries(${PROJECT_NAME}
-  ${catkin_LIBRARIES}
-)
 

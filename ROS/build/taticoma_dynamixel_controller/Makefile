@@ -101,17 +101,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -122,6 +111,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -168,46 +168,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/rule:
-	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/rule
-.PHONY : taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/rule
+taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/rule:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/rule
+.PHONY : taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/rule
 
 # Convenience name for target.
-taticoma_dynamixel_controller: taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/rule
+dynamixel_controller: taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/rule
 
-.PHONY : taticoma_dynamixel_controller
+.PHONY : dynamixel_controller
 
 # fast build rule for target.
-taticoma_dynamixel_controller/fast:
-	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/build
-.PHONY : taticoma_dynamixel_controller/fast
+dynamixel_controller/fast:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/build
+.PHONY : dynamixel_controller/fast
 
-src/taticoma_dynamixel_controller.o: src/taticoma_dynamixel_controller.cpp.o
+src/dynamixel_controller.o: src/dynamixel_controller.cpp.o
 
-.PHONY : src/taticoma_dynamixel_controller.o
+.PHONY : src/dynamixel_controller.o
 
 # target to build an object file
-src/taticoma_dynamixel_controller.cpp.o:
-	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/src/taticoma_dynamixel_controller.cpp.o
-.PHONY : src/taticoma_dynamixel_controller.cpp.o
+src/dynamixel_controller.cpp.o:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/src/dynamixel_controller.cpp.o
+.PHONY : src/dynamixel_controller.cpp.o
 
-src/taticoma_dynamixel_controller.i: src/taticoma_dynamixel_controller.cpp.i
+src/dynamixel_controller.i: src/dynamixel_controller.cpp.i
 
-.PHONY : src/taticoma_dynamixel_controller.i
+.PHONY : src/dynamixel_controller.i
 
 # target to preprocess a source file
-src/taticoma_dynamixel_controller.cpp.i:
-	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/src/taticoma_dynamixel_controller.cpp.i
-.PHONY : src/taticoma_dynamixel_controller.cpp.i
+src/dynamixel_controller.cpp.i:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/src/dynamixel_controller.cpp.i
+.PHONY : src/dynamixel_controller.cpp.i
 
-src/taticoma_dynamixel_controller.s: src/taticoma_dynamixel_controller.cpp.s
+src/dynamixel_controller.s: src/dynamixel_controller.cpp.s
 
-.PHONY : src/taticoma_dynamixel_controller.s
+.PHONY : src/dynamixel_controller.s
 
 # target to generate assembly for a file
-src/taticoma_dynamixel_controller.cpp.s:
-	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/taticoma_dynamixel_controller.dir/src/taticoma_dynamixel_controller.cpp.s
-.PHONY : src/taticoma_dynamixel_controller.cpp.s
+src/dynamixel_controller.cpp.s:
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/build.make taticoma_dynamixel_controller/CMakeFiles/dynamixel_controller.dir/src/dynamixel_controller.cpp.s
+.PHONY : src/dynamixel_controller.cpp.s
 
 # Help Target
 help:
@@ -219,13 +219,13 @@ help:
 	@echo "... install/local"
 	@echo "... test"
 	@echo "... list_install_components"
-	@echo "... taticoma_dynamixel_controller"
-	@echo "... rebuild_cache"
+	@echo "... dynamixel_controller"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... src/taticoma_dynamixel_controller.o"
-	@echo "... src/taticoma_dynamixel_controller.i"
-	@echo "... src/taticoma_dynamixel_controller.s"
+	@echo "... src/dynamixel_controller.o"
+	@echo "... src/dynamixel_controller.i"
+	@echo "... src/dynamixel_controller.s"
 .PHONY : help
 
 
