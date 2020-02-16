@@ -11,7 +11,7 @@
 
 #define JOY_R1 336
 #define JOY_R2 645
-#define JOY_MIN_V 3.7f
+#define JOY_MIN_V 3.3f
 #define JOY_MAX_V 4.2f
 
 float joyBatVoltage;
@@ -465,8 +465,7 @@ void loop() {
         joyState = 1;
 
         checkPSUpdates();
-        modeControl();
-        gaitModeControl();
+        ps4LedControl();
 
     } else{
         joyState = 0;
