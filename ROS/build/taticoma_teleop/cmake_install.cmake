@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/TATICOMA/ROS/src/taticoma_teleop
+# Install script for directory: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/TATICOMA/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/taticoma-rev-2/ROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleop.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleop.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_teleop/cmake" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleopConfig.cmake"
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleopConfig-version.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleopConfig.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/catkin_generated/installspace/taticoma_teleopConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_teleop" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_teleop" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/package.xml")
 endif()
 

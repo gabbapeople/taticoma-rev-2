@@ -127,16 +127,24 @@ void joyVoltageHandle() {
 
 // NEXTION OPERATION
 
-void nextionEndComand() {
-    for (int i = 0; i < 3; i++)
-        Serial2.write(0xff);
+void nextionSetup() {
+    Serial2.begin(9600);
+    delay(1500);
+    Serial2.print("baud=115200");
+    Serial2.write(0xff);
+    Serial2.write(0xff);
+    Serial2.write(0xff);
+    Serial2.end();
+    Serial2.begin(115200);
 }
 
 void nextionSendData(String dev, String data) {
     Serial2.print(dev);
     Serial2.print("=");
     Serial2.print(data);
-    nextionEndComand();
+    Serial2.write(0xff);
+    Serial2.write(0xff);
+    Serial2.write(0xff);
 }
 
 void nextionHandle() {
@@ -276,7 +284,7 @@ void checkPSUpdates() {
 void serialSend() {
 
     if (receiveFlag == false) {
-        if ((now() - lastMsgTime) >= 100) {
+        if ((now() - lastMsgTime) >= 10) {
             receiveFlag = true;
         }
     }
@@ -440,8 +448,9 @@ void setup() {
     Usb.Init();
     setBuffers();
     
-    Serial2.begin(9600);
-    Serial3.begin(57600);
+    nextionSetup();
+
+    Serial3.begin(115200);
 
     analogReadResolution(12);
     pinMode(JOY_BAT_PIN, OUTPUT);

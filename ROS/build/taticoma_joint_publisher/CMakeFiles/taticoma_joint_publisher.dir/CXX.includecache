@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_joint_publisher/src/taticoma_joint_publisher.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_joint_publisher/src/taticoma_joint_publisher.cpp
 ros/ros.h
-/home/ubuntu/TATICOMA/ROS/src/taticoma_joint_publisher/src/ros/ros.h
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_joint_publisher/src/ros/ros.h
 sensor_msgs/JointState.h
 -
 taticoma_msgs/LegsJointsState.h
-/home/ubuntu/TATICOMA/ROS/src/taticoma_joint_publisher/src/taticoma_msgs/LegsJointsState.h
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_joint_publisher/src/taticoma_msgs/LegsJointsState.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

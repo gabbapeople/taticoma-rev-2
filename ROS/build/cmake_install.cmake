@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/TATICOMA/ROS/src
+# Install script for directory: /home/ubuntu/taticoma-rev-2/ROS/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/TATICOMA/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/taticoma-rev-2/ROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,101 +49,101 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/_setup_util.py")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE PROGRAM FILES "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE PROGRAM FILES "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/env.sh")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE PROGRAM FILES "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE PROGRAM FILES "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/setup.bash;/home/ubuntu/TATICOMA/ROS/install/local_setup.bash")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/setup.bash;/home/ubuntu/taticoma-rev-2/ROS/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/setup.bash"
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE FILE FILES
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/setup.bash"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/setup.sh;/home/ubuntu/TATICOMA/ROS/install/local_setup.sh")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/setup.sh;/home/ubuntu/taticoma-rev-2/ROS/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/setup.sh"
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE FILE FILES
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/setup.sh"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/setup.zsh;/home/ubuntu/TATICOMA/ROS/install/local_setup.zsh")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/setup.zsh;/home/ubuntu/taticoma-rev-2/ROS/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/setup.zsh"
-    "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE FILE FILES
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/setup.zsh"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/TATICOMA/ROS/install/.rosinstall")
+   "/home/ubuntu/taticoma-rev-2/ROS/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/TATICOMA/ROS/install" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ubuntu/taticoma-rev-2/ROS/install" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/TATICOMA/ROS/build/gtest/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/serial/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_msgs/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/dynamixel_sdk/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_toolbox/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_body_kinematics/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_dynamixel_controller/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_teleop/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_controllers/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_joint_publisher/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_gait/cmake_install.cmake")
-  include("/home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/serial/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_msgs/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_sdk/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_toolbox/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_body_kinematics/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_dynamixel_controller/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_controllers/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_joint_publisher/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait/cmake_install.cmake")
+  include("/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics/cmake_install.cmake")
 
 endif()
 
@@ -155,5 +155,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/TATICOMA/ROS/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/taticoma-rev-2/ROS/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

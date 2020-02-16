@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/GetLegIKSolver.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolver.h
 ros/service_traits.h
 -
 taticoma_msgs/GetLegIKSolverRequest.h
@@ -14,7 +14,7 @@ taticoma_msgs/GetLegIKSolverRequest.h
 taticoma_msgs/GetLegIKSolverResponse.h
 -
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/GetLegIKSolverRequest.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverRequest.h
 string
 -
 vector
@@ -34,7 +34,7 @@ taticoma_msgs/LegJointsState.h
 taticoma_msgs/LegPositionState.h
 -
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/GetLegIKSolverResponse.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverResponse.h
 string
 -
 vector
@@ -52,7 +52,7 @@ ros/message_operations.h
 taticoma_msgs/LegJointsState.h
 -
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/LegJointsState.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegJointsState.h
 string
 -
 vector
@@ -68,7 +68,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/LegPositionState.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegPositionState.h
 string
 -
 vector
@@ -84,7 +84,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
 kdl/chainiksolver.hpp
 -
 kdl/chainjnttojacsolver.hpp
@@ -92,27 +92,27 @@ kdl/chainjnttojacsolver.hpp
 kdl/utilities/svd_HH.hpp
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 kdl/chainiksolver.hpp
 -
 kdl/chainfksolver.hpp
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.cpp
 leg_ik_service.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.hpp
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_ik_service.hpp
 ros/ros.h
 -
 kdl_parser/kdl_parser.hpp
 -
 chainiksolvervel_pinv.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
 kdl/chainfksolverpos_recursive.hpp
 -
 hp_chainiksolverpos_nr_jl.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 taticoma_msgs/GetLegIKSolver.h
 -
 

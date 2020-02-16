@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs/TeleopCommand.h
+/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/TeleopCommand.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/serial/include/serial/serial.h
+/home/ubuntu/taticoma-rev-2/ROS/src/serial/include/serial/serial.h
 limits
 -
 vector
@@ -40,7 +40,7 @@ stdexcept
 serial/v8stdint.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/serial/include/serial/v8stdint.h
+/home/ubuntu/taticoma-rev-2/ROS/src/serial/include/serial/v8stdint.h
 stddef.h
 -
 stdio.h
@@ -48,11 +48,11 @@ stdio.h
 stdint.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.cpp
 taticoma_teleop_serial.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.hpp
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.hpp
 ros/ros.h
 -
 serial/serial.h
@@ -62,7 +62,7 @@ std_msgs/String.h
 std_msgs/Empty.h
 -
 taticoma_msgs/TeleopCommand.h
-/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/src/taticoma_msgs/TeleopCommand.h
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/src/taticoma_msgs/TeleopCommand.h
 
 /opt/ros/melodic/include/ros/advertise_options.h
 ros/forwards.h

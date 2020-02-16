@@ -20,6 +20,4 @@
     (:file "_package_LegsJointsState" :depends-on ("_package"))
     (:file "TeleopCommand" :depends-on ("_package_TeleopCommand"))
     (:file "_package_TeleopCommand" :depends-on ("_package"))
-    (:file "TeleopSerial" :depends-on ("_package_TeleopSerial"))
-    (:file "_package_TeleopSerial" :depends-on ("_package"))
   ))

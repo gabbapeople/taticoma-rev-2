@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.cpp" "/home/ubuntu/TATICOMA/ROS/build/taticoma_teleop/CMakeFiles/taticoma_teleop_serial.dir/src/taticoma_teleop_serial.cpp.o"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/src/taticoma_teleop_serial.cpp" "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/CMakeFiles/taticoma_teleop_serial.dir/src/taticoma_teleop_serial.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,16 +17,16 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_teleop/include"
-  "/home/ubuntu/TATICOMA/ROS/devel/include"
-  "/home/ubuntu/TATICOMA/ROS/src/serial/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_teleop/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/serial/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/TATICOMA/ROS/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
+  "/home/ubuntu/taticoma-rev-2/ROS/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

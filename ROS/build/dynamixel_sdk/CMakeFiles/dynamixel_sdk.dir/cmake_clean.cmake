@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/group_bulk_write.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler.cpp.o"
   "CMakeFiles/dynamixel_sdk.dir/src/dynamixel_sdk/port_handler_linux.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/libdynamixel_sdk.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/libdynamixel_sdk.so"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/libdynamixel_sdk.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/libdynamixel_sdk.so"
 )
 
 # Per-language clean rules from dependency scanning.

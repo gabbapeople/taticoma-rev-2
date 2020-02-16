@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Utility rule file for roscpp_generate_messages_py.
 
@@ -63,10 +63,10 @@ dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/build: roscpp_generate_
 .PHONY : dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/build
 
 dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_sdk && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/dynamixel_sdk /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/dynamixel_sdk /home/ubuntu/TATICOMA/ROS/build/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/dynamixel_sdk /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_sdk /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_sdk/CMakeFiles/roscpp_generate_messages_py.dir/depend
 

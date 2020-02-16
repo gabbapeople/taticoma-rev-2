@@ -1,8 +1,8 @@
-prefix=/home/ubuntu/TATICOMA/ROS/install
+prefix=/home/ubuntu/taticoma-rev-2/ROS/install
 
 Name: taticoma_msgs
 Description: Description of taticoma_msgs
 Version: 0.0.0
-Cflags: -I/home/ubuntu/TATICOMA/ROS/install/include
-Libs: -L/home/ubuntu/TATICOMA/ROS/install/lib 
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
 Requires: message_runtime

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial-test-timer.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial-test-timer"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial-test-timer.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial-test-timer"
 )
 
 # Per-language clean rules from dependency scanning.

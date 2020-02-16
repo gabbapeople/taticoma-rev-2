@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial_example.dir/examples/serial_example.cc.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial_example.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial_example"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial_example.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial_example"
 )
 
 # Per-language clean rules from dependency scanning.

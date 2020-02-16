@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/TATICOMA/ROS/src/taticoma_msgs
+# Install script for directory: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/TATICOMA/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/taticoma-rev-2/ROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,65 +39,65 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/msg" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
-    "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+    "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/srv" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/srv" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/cmake" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/cmake" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/TATICOMA/ROS/devel/include/taticoma_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ubuntu/TATICOMA/ROS/devel/share/roseus/ros/taticoma_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/ubuntu/taticoma-rev-2/ROS/devel/share/roseus/ros/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/TATICOMA/ROS/devel/share/common-lisp/ros/taticoma_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/ubuntu/taticoma-rev-2/ROS/devel/share/common-lisp/ros/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ubuntu/TATICOMA/ROS/devel/share/gennodejs/ros/taticoma_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/ubuntu/taticoma-rev-2/ROS/devel/share/gennodejs/ros/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/ubuntu/TATICOMA/ROS/devel/lib/python2.7/dist-packages/taticoma_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/python2.7/dist-packages/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/TATICOMA/ROS/devel/lib/python2.7/dist-packages/taticoma_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/python2.7/dist-packages/taticoma_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/cmake" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/cmake" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs/cmake" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgsConfig.cmake"
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgsConfig-version.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgsConfig.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_msgs/catkin_generated/installspace/taticoma_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_msgs" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/package.xml")
 endif()
 

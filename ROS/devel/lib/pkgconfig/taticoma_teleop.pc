@@ -1,8 +1,8 @@
-prefix=/home/ubuntu/TATICOMA/ROS/devel
+prefix=/home/ubuntu/taticoma-rev-2/ROS/devel
 
 Name: taticoma_teleop
 Description: Description of taticoma_teleop
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/ubuntu/TATICOMA/ROS/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: serial std_msgs

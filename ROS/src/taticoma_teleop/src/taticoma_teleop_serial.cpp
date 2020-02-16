@@ -7,7 +7,7 @@ TeleopSerial::TeleopSerial()
     // timer = node.createTimer(ros::Rate(100), &TeleopSerial::scanData, this);
 
     _serial.setPort("/dev/ttyUSB0");
-    _serial.setBaudrate(57600);
+    _serial.setBaudrate(115200);
     serial::Timeout to = serial::Timeout::simpleTimeout(10);
     _serial.setTimeout(to);
     _serial.open();
@@ -207,38 +207,41 @@ void TeleopSerial::scanData(const ros::TimerEvent&) {}
 
 void TeleopSerial::scanData()
 {
+    //ros::Rate sleep_rate(100000);
+
     while (ros::ok) {
-    if (receiveFlag == false) {
+        if (receiveFlag == false) {
 
-        if (_serial.available()) {
-            _serial.read(&_byte, 1);
+            if (_serial.available()) {
+                _serial.read(&_byte, 1);
 
-            if (_byte == HEADER) {
-                // ROS_WARN("READ");
-                if (readMsg()) {
-                    receiveFlag = true;
+                if (_byte == HEADER) {
+                    //ROS_WARN("READ");
+                    if (readMsg()) {
+                        receiveFlag = true;
+                    }
                 }
             }
         }
-    }
 
-    if (receiveFlag == true) {
-        switch (counter) {
-        case 0:
-            sendMsg(outputMsgBuffer[0].cmd, outputMsgBuffer[0].data);
-            counter++;
-            receiveFlag = false;
-            break;
-        case 1:
-            sendMsg(outputMsgBuffer[1].cmd, outputMsgBuffer[1].data);
-            counter++;
-            receiveFlag = false;
-            break;
-        case MSG_BUFFER_SIZE:
-            counter = 0;
-            break;
+        if (receiveFlag == true) {
+            switch (counter) {
+            case 0:
+                sendMsg(outputMsgBuffer[0].cmd, outputMsgBuffer[0].data);
+                counter++;
+                receiveFlag = false;
+                break;
+            case 1:
+                sendMsg(outputMsgBuffer[1].cmd, outputMsgBuffer[1].data);
+                counter++;
+                receiveFlag = false;
+                break;
+            case MSG_BUFFER_SIZE:
+                counter = 0;
+                break;
+            }
         }
-    }
+        //sleep_rate.sleep();
     }
 }
 

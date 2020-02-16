@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/find_dynamixel.dir/src/find_dynamixel.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/dynamixel_workbench_controllers/find_dynamixel.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/dynamixel_workbench_controllers/find_dynamixel"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/dynamixel_workbench_controllers/find_dynamixel.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/dynamixel_workbench_controllers/find_dynamixel"
 )
 
 # Per-language clean rules from dependency scanning.

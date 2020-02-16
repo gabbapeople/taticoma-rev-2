@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/TATICOMA/ROS/src/taticoma_joint_publisher
+# Install script for directory: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_joint_publisher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/TATICOMA/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/taticoma-rev-2/ROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisher.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisher.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_joint_publisher/cmake" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisherConfig.cmake"
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisherConfig-version.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisherConfig.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_joint_publisher/catkin_generated/installspace/taticoma_joint_publisherConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_joint_publisher" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/src/taticoma_joint_publisher/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_joint_publisher" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_joint_publisher/package.xml")
 endif()
 

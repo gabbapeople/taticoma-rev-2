@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/taticoma_dynamixel_controller.dir/src/taticoma_dynamixel_controller.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_dynamixel_controller/taticoma_dynamixel_controller.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_dynamixel_controller/taticoma_dynamixel_controller"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_dynamixel_controller/taticoma_dynamixel_controller.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_dynamixel_controller/taticoma_dynamixel_controller"
 )
 
 # Per-language clean rules from dependency scanning.

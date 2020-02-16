@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serial-test.dir/unix_serial_tests.cc.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial-test.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial-test"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial-test.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial-test"
 )
 
 # Per-language clean rules from dependency scanning.

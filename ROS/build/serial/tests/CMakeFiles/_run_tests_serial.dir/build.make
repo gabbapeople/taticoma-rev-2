@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Utility rule file for _run_tests_serial.
 
@@ -63,10 +63,10 @@ serial/tests/CMakeFiles/_run_tests_serial.dir/build: _run_tests_serial
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial.dir/build
 
 serial/tests/CMakeFiles/_run_tests_serial.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_serial.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_serial.dir/cmake_clean.cmake
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial.dir/clean
 
 serial/tests/CMakeFiles/_run_tests_serial.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/serial/tests /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/serial/tests /home/ubuntu/TATICOMA/ROS/build/serial/tests/CMakeFiles/_run_tests_serial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/serial/tests /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests/CMakeFiles/_run_tests_serial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial.dir/depend
 

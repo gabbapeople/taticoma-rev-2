@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/ubuntu/TATICOMA/ROS/src/serial/include".split(';') if "/home/ubuntu/TATICOMA/ROS/src/serial/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/ubuntu/taticoma-rev-2/ROS/src/serial/include".split(';') if "/home/ubuntu/taticoma-rev-2/ROS/src/serial/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lserial;-lrt;-lpthread".split(';') if "-lserial;-lrt;-lpthread" != "" else []
 PROJECT_NAME = "serial"
-PROJECT_SPACE_DIR = "/home/ubuntu/TATICOMA/ROS/devel"
+PROJECT_SPACE_DIR = "/home/ubuntu/taticoma-rev-2/ROS/devel"
 PROJECT_VERSION = "1.2.1"

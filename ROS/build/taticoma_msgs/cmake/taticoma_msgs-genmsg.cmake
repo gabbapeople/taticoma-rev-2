@@ -2,7 +2,7 @@
 
 message(STATUS "taticoma_msgs: 8 messages, 1 services")
 
-set(MSG_I_FLAGS "-Itaticoma_msgs:/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Itaticoma_msgs:/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,49 +17,49 @@ add_custom_target(taticoma_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" "taticoma_msgs/LegJointsState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" "taticoma_msgs/LegJointsState:taticoma_msgs/LegPositionState"
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" "taticoma_msgs/LegPositionState:taticoma_msgs/LegJointsState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" "taticoma_msgs/LegJointsState:taticoma_msgs/LegPositionState"
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" "taticoma_msgs/LegPositionState:taticoma_msgs/LegJointsState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" "taticoma_msgs/LegJointsState"
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" ""
 )
 
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "taticoma_msgs" "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" ""
 )
 
 #
@@ -69,49 +69,49 @@ add_custom_target(_taticoma_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_cpp(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_cpp(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
@@ -119,9 +119,9 @@ _generate_msg_cpp(taticoma_msgs
 
 ### Generating Services
 _generate_srv_cpp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
   "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/taticoma_msgs
 )
 
@@ -137,23 +137,23 @@ add_custom_target(taticoma_msgs_generate_messages_cpp
 add_dependencies(taticoma_msgs_generate_messages taticoma_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_cpp _taticoma_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -166,49 +166,49 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS taticoma_msgs_generate_messages_cpp
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_eus(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_eus(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
@@ -216,9 +216,9 @@ _generate_msg_eus(taticoma_msgs
 
 ### Generating Services
 _generate_srv_eus(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
   "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/taticoma_msgs
 )
 
@@ -234,23 +234,23 @@ add_custom_target(taticoma_msgs_generate_messages_eus
 add_dependencies(taticoma_msgs_generate_messages taticoma_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_eus _taticoma_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -263,49 +263,49 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS taticoma_msgs_generate_messages_eus
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_lisp(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_lisp(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
@@ -313,9 +313,9 @@ _generate_msg_lisp(taticoma_msgs
 
 ### Generating Services
 _generate_srv_lisp(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
   "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/taticoma_msgs
 )
 
@@ -331,23 +331,23 @@ add_custom_target(taticoma_msgs_generate_messages_lisp
 add_dependencies(taticoma_msgs_generate_messages taticoma_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_lisp _taticoma_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -360,49 +360,49 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS taticoma_msgs_generate_messages_lis
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_nodejs(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_nodejs(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
@@ -410,9 +410,9 @@ _generate_msg_nodejs(taticoma_msgs
 
 ### Generating Services
 _generate_srv_nodejs(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
   "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/taticoma_msgs
 )
 
@@ -428,23 +428,23 @@ add_custom_target(taticoma_msgs_generate_messages_nodejs
 add_dependencies(taticoma_msgs_generate_messages taticoma_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_nodejs _taticoma_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -457,49 +457,49 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS taticoma_msgs_generate_messages_nod
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_py(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg"
+  "${MSG_I_FLAGS}"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
+)
+_generate_msg_py(taticoma_msgs
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 _generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg"
-  "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
-)
-_generate_msg_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
@@ -507,9 +507,9 @@ _generate_msg_py(taticoma_msgs
 
 ### Generating Services
 _generate_srv_py(taticoma_msgs
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv"
   "${MSG_I_FLAGS}"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg;/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg;/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/taticoma_msgs
 )
 
@@ -525,23 +525,23 @@ add_custom_target(taticoma_msgs_generate_messages_py
 add_dependencies(taticoma_msgs_generate_messages taticoma_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/srv/GetLegIKSolver.srv" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/BodyState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegJointsState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegIKRequest.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/LegsJointsState.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/BodyCommand.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/GaitCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/ubuntu/TATICOMA/ROS/src/taticoma_msgs/msg/LegPositionState.msg" NAME_WE)
+get_filename_component(_filename "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs/msg/TeleopCommand.msg" NAME_WE)
 add_dependencies(taticoma_msgs_generate_messages_py _taticoma_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

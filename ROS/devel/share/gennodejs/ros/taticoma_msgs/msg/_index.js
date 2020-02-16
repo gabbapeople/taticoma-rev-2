@@ -9,7 +9,6 @@ let LegsJointsState = require('./LegsJointsState.js');
 let BodyState = require('./BodyState.js');
 let LegPositionState = require('./LegPositionState.js');
 let GaitCommand = require('./GaitCommand.js');
-let TeleopSerial = require('./TeleopSerial.js');
 
 module.exports = {
   LegJointsState: LegJointsState,
@@ -20,5 +19,4 @@ module.exports = {
   BodyState: BodyState,
   LegPositionState: LegPositionState,
   GaitCommand: GaitCommand,
-  TeleopSerial: TeleopSerial,
 };

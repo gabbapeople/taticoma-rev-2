@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_
 .PHONY : dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/dynamixel_workbench /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/dynamixel_workbench /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_workbench/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

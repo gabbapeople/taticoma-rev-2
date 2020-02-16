@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub"
 )
 
 # Per-language clean rules from dependency scanning.

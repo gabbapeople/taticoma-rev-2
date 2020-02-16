@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/taticoma_joint_publisher.dir/src/taticoma_joint_publisher.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_joint_publisher/taticoma_joint_publisher.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_joint_publisher/taticoma_joint_publisher"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_joint_publisher/taticoma_joint_publisher.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_joint_publisher/taticoma_joint_publisher"
 )
 
 # Per-language clean rules from dependency scanning.

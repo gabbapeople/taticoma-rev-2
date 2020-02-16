@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Utility rule file for _run_tests_serial_gtest_serial-test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
 include serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/progress.make
 
 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test:
-	cd /home/ubuntu/TATICOMA/ROS/build/serial/tests && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/ubuntu/TATICOMA/ROS/build/test_results/serial/gtest-serial-test.xml "/home/ubuntu/TATICOMA/ROS/devel/lib/serial/serial-test --gtest_output=xml:/home/ubuntu/TATICOMA/ROS/build/test_results/serial/gtest-serial-test.xml"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/ubuntu/taticoma-rev-2/ROS/build/test_results/serial/gtest-serial-test.xml "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/serial/serial-test --gtest_output=xml:/home/ubuntu/taticoma-rev-2/ROS/build/test_results/serial/gtest-serial-test.xml"
 
 _run_tests_serial_gtest_serial-test: serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test
 _run_tests_serial_gtest_serial-test: serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/build.make
@@ -67,10 +67,10 @@ serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/build: _run_test
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/build
 
 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_serial_gtest_serial-test.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_serial_gtest_serial-test.dir/cmake_clean.cmake
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/clean
 
 serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/serial/tests /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/serial/tests /home/ubuntu/TATICOMA/ROS/build/serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/serial/tests /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests /home/ubuntu/taticoma-rev-2/ROS/build/serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : serial/tests/CMakeFiles/_run_tests_serial_gtest_serial-test.dir/depend
 

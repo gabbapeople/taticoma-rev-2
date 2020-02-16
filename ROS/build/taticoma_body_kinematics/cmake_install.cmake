@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/TATICOMA/ROS/src/taticoma_body_kinematics
+# Install script for directory: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_body_kinematics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/TATICOMA/ROS/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/taticoma-rev-2/ROS/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematics.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematics.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_body_kinematics/cmake" TYPE FILE FILES
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematicsConfig.cmake"
-    "/home/ubuntu/TATICOMA/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematicsConfig-version.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematicsConfig.cmake"
+    "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_body_kinematics/catkin_generated/installspace/taticoma_body_kinematicsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_body_kinematics" TYPE FILE FILES "/home/ubuntu/TATICOMA/ROS/src/taticoma_body_kinematics/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/taticoma_body_kinematics" TYPE FILE FILES "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_body_kinematics/package.xml")
 endif()
 

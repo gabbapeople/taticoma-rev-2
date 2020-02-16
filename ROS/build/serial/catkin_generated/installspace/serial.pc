@@ -1,8 +1,8 @@
-prefix=/home/ubuntu/TATICOMA/ROS/install
+prefix=/home/ubuntu/taticoma-rev-2/ROS/install
 
 Name: serial
 Description: Description of serial
 Version: 1.2.1
-Cflags: -I/home/ubuntu/TATICOMA/ROS/install/include
-Libs: -L/home/ubuntu/TATICOMA/ROS/install/lib -lserial -lrt -lpthread
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lserial -lrt -lpthread
 Requires: 

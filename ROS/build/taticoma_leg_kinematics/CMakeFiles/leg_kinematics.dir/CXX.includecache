@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
 kdl/chainiksolver.hpp
 -
 kdl/chainjnttojacsolver.hpp
@@ -14,17 +14,17 @@ kdl/chainjnttojacsolver.hpp
 kdl/utilities/svd_HH.hpp
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 kdl/chainiksolver.hpp
 -
 kdl/chainfksolver.hpp
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_kinematics.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_kinematics.cpp
 ros/ros.h
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/ros/ros.h
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/ros/ros.h
 std_msgs/String.h
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/std_msgs/String.h
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/std_msgs/String.h
 sstream
 -
 eigen3/Eigen/Core
@@ -32,11 +32,11 @@ eigen3/Eigen/Core
 kdl_parser/kdl_parser.hpp
 -
 chainiksolvervel_pinv.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.hpp
 kdl/chainfksolverpos_recursive.hpp
 -
 hp_chainiksolverpos_nr_jl.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 
 /opt/ros/melodic/include/kdl/chain.hpp
 segment.hpp

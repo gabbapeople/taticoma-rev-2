@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o"
   "CMakeFiles/gait_kinematics.dir/src/gait.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics"
 )
 
 # Per-language clean rules from dependency scanning.

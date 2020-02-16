@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.cpp
 gait.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.hpp
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.hpp
 ros/ros.h
 -
 kdl/frames.hpp
@@ -28,11 +28,11 @@ kdl/path_roundedcomposite.hpp
 queue
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp
 gait_kinematics.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.hpp
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.hpp
 ros/ros.h
 -
 kdl_parser/kdl_parser.hpp
@@ -54,7 +54,7 @@ taticoma_msgs/LegsJointsState.h
 taticoma_msgs/GaitCommand.h
 -
 gait.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.hpp
 
 /opt/ros/melodic/include/kdl/chain.hpp
 segment.hpp

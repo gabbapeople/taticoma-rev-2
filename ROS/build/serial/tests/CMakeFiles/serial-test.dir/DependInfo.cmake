@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/TATICOMA/ROS/src/serial/tests/unix_serial_tests.cc" "/home/ubuntu/TATICOMA/ROS/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/serial/tests/unix_serial_tests.cc" "/home/ubuntu/taticoma-rev-2/ROS/build/serial/tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,14 +15,14 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/TATICOMA/ROS/src/serial/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/serial/include"
   "/usr/src/googletest/googletest/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ubuntu/TATICOMA/ROS/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/ubuntu/TATICOMA/ROS/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
+  "/home/ubuntu/taticoma-rev-2/ROS/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/ubuntu/taticoma-rev-2/ROS/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

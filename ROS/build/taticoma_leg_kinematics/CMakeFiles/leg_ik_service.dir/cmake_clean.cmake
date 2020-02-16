@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leg_ik_service.dir/src/leg_ik_service.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_ik_service.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_ik_service"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_ik_service.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_ik_service"
 )
 
 # Per-language clean rules from dependency scanning.

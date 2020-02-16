@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Include any dependencies generated for this target.
 include taticoma_gait/CMakeFiles/gait_kinematics.dir/depend.make
@@ -58,17 +58,17 @@ include taticoma_gait/CMakeFiles/gait_kinematics.dir/progress.make
 include taticoma_gait/CMakeFiles/gait_kinematics.dir/flags.make
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: taticoma_gait/CMakeFiles/gait_kinematics.dir/flags.make
-taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/TATICOMA/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o -c /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.cpp
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o -c /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.cpp > CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp > CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait_kinematics.cpp -o CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp -o CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o.requires:
 
@@ -82,17 +82,17 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o.provides.
 
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: taticoma_gait/CMakeFiles/gait_kinematics.dir/flags.make
-taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/TATICOMA/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gait_kinematics.dir/src/gait.cpp.o -c /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.cpp
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gait_kinematics.dir/src/gait.cpp.o -c /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.cpp
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gait_kinematics.dir/src/gait.cpp.i"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.cpp > CMakeFiles/gait_kinematics.dir/src/gait.cpp.i
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.cpp > CMakeFiles/gait_kinematics.dir/src/gait.cpp.i
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gait_kinematics.dir/src/gait.cpp.s"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/TATICOMA/ROS/src/taticoma_gait/src/gait.cpp -o CMakeFiles/gait_kinematics.dir/src/gait.cpp.s
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.cpp -o CMakeFiles/gait_kinematics.dir/src/gait.cpp.s
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o.requires:
 
@@ -113,44 +113,44 @@ gait_kinematics_OBJECTS = \
 # External object files for target gait_kinematics
 gait_kinematics_EXTERNAL_OBJECTS =
 
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libkdl_parser.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/liburdf.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libroscpp.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librostime.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libcpp_common.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/TATICOMA/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gait_kinematics.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libkdl_parser.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/liburdf.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libroscpp.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/librostime.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /opt/ros/melodic/lib/libcpp_common.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gait_kinematics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-taticoma_gait/CMakeFiles/gait_kinematics.dir/build: /home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_gait/gait_kinematics
+taticoma_gait/CMakeFiles/gait_kinematics.dir/build: /home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_gait/gait_kinematics
 
 .PHONY : taticoma_gait/CMakeFiles/gait_kinematics.dir/build
 
@@ -160,10 +160,10 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/requires: taticoma_gait/CMakeFiles/
 .PHONY : taticoma_gait/CMakeFiles/gait_kinematics.dir/requires
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_gait && $(CMAKE_COMMAND) -P CMakeFiles/gait_kinematics.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait && $(CMAKE_COMMAND) -P CMakeFiles/gait_kinematics.dir/cmake_clean.cmake
 .PHONY : taticoma_gait/CMakeFiles/gait_kinematics.dir/clean
 
 taticoma_gait/CMakeFiles/gait_kinematics.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/taticoma_gait /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/taticoma_gait /home/ubuntu/TATICOMA/ROS/build/taticoma_gait/CMakeFiles/gait_kinematics.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait/CMakeFiles/gait_kinematics.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : taticoma_gait/CMakeFiles/gait_kinematics.dir/depend
 

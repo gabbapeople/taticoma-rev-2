@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.cpp
 kdl/chainiksolvervel_pinv.hpp
 -
 ros/ros.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.cpp
 hp_chainiksolverpos_nr_jl.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 ros/ros.h
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
 kdl/chainiksolver.hpp
 -
 kdl/chainfksolver.hpp
 -
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/svd_HH.cpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/svd_HH.cpp
 svd_HH.hpp
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/svd_HH.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/svd_HH.hpp
 
-/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/svd_HH.hpp
+/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/svd_HH.hpp
 kdl/jacobian.hpp
 -
 kdl/jntarray.hpp

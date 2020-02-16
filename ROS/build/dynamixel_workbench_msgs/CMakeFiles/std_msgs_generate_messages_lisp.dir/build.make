@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: s
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_msgs && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/dynamixel_workbench_msgs /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_msgs /home/ubuntu/TATICOMA/ROS/build/dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/dynamixel_workbench_msgs /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_msgs /home/ubuntu/taticoma-rev-2/ROS/build/dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dynamixel_workbench_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

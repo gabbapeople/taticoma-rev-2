@@ -1,8 +1,8 @@
-prefix=/home/ubuntu/TATICOMA/ROS/install
+prefix=/home/ubuntu/taticoma-rev-2/ROS/install
 
 Name: dynamixel_sdk
 Description: Description of dynamixel_sdk
 Version: 3.7.21
-Cflags: -I/home/ubuntu/TATICOMA/ROS/install/include
-Libs: -L/home/ubuntu/TATICOMA/ROS/install/lib -ldynamixel_sdk
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldynamixel_sdk
 Requires: roscpp rospy

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dynamixel_workbench_controllers.dir/src/dynamixel_workbench_controllers.cpp.o"
   "CMakeFiles/dynamixel_workbench_controllers.dir/src/trajectory_generator.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/dynamixel_workbench_controllers/dynamixel_workbench_controllers.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/dynamixel_workbench_controllers/dynamixel_workbench_controllers"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/dynamixel_workbench_controllers/dynamixel_workbench_controllers.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/dynamixel_workbench_controllers/dynamixel_workbench_controllers"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/leg_ik_solver.dir/src/hp_chainiksolverpos_nr_jl.cpp.o"
   "CMakeFiles/leg_ik_solver.dir/src/chainiksolvervel_pinv.cpp.o"
   "CMakeFiles/leg_ik_solver.dir/src/svd_HH.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/libleg_ik_solver.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/libleg_ik_solver.so"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/libleg_ik_solver.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/libleg_ik_solver.so"
 )
 
 # Per-language clean rules from dependency scanning.

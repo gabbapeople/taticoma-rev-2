@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.cpp" "/home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/chainiksolvervel_pinv.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.cpp" "/home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/hp_chainiksolverpos_nr_jl.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/svd_HH.cpp" "/home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/svd_HH.cpp.o"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/chainiksolvervel_pinv.cpp" "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/chainiksolvervel_pinv.cpp.o"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.cpp" "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/hp_chainiksolverpos_nr_jl.cpp.o"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/svd_HH.cpp" "/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_ik_solver.dir/src/svd_HH.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -19,8 +19,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/include"
-  "/home/ubuntu/TATICOMA/ROS/devel/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/include"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"

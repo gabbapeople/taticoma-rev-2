@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/taticoma_teleop_serial.dir/src/taticoma_teleop_serial.cpp.o"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_teleop/taticoma_teleop_serial.pdb"
-  "/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_teleop/taticoma_teleop_serial"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_teleop/taticoma_teleop_serial.pdb"
+  "/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_teleop/taticoma_teleop_serial"
 )
 
 # Per-language clean rules from dependency scanning.

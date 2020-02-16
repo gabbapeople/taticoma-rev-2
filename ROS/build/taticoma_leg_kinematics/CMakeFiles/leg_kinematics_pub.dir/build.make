@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 # Include any dependencies generated for this target.
 include taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/depend.make
@@ -58,17 +58,17 @@ include taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/progress.make
 include taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/flags.make
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/flags.make
-taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o: /home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/TATICOMA/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o -c /home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp
+taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o -c /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.i"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp > CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.i
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp > CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.i
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.s"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp -o CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.s
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/leg_kinematics_pub.cpp -o CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.s
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o.requires:
 
@@ -88,44 +88,44 @@ leg_kinematics_pub_OBJECTS = \
 # External object files for target leg_kinematics_pub
 leg_kinematics_pub_EXTERNAL_OBJECTS =
 
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/build.make
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /home/ubuntu/TATICOMA/ROS/devel/lib/libleg_ik_solver.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libkdl_parser.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/liburdf.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_bridge.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libroscpp.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librostime.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libcpp_common.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/TATICOMA/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub"
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leg_kinematics_pub.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/src/leg_kinematics_pub.cpp.o
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/build.make
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /home/ubuntu/taticoma-rev-2/ROS/devel/lib/libleg_ik_solver.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libkdl_parser.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/liborocos-kdl.so.1.4.0
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/liburdf.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_bridge.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libroscpp.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/librostime.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /opt/ros/melodic/lib/libcpp_common.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub: taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub"
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/leg_kinematics_pub.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/build: /home/ubuntu/TATICOMA/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub
+taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/build: /home/ubuntu/taticoma-rev-2/ROS/devel/lib/taticoma_leg_kinematics/leg_kinematics_pub
 
 .PHONY : taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/build
 
@@ -134,10 +134,10 @@ taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/requires: taticoma_leg
 .PHONY : taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/requires
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/clean:
-	cd /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics && $(CMAKE_COMMAND) -P CMakeFiles/leg_kinematics_pub.dir/cmake_clean.cmake
+	cd /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics && $(CMAKE_COMMAND) -P CMakeFiles/leg_kinematics_pub.dir/cmake_clean.cmake
 .PHONY : taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/clean
 
 taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/TATICOMA/ROS/src /home/ubuntu/TATICOMA/ROS/src/taticoma_leg_kinematics /home/ubuntu/TATICOMA/ROS/build /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics /home/ubuntu/TATICOMA/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/taticoma-rev-2/ROS/src /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics /home/ubuntu/taticoma-rev-2/ROS/build /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : taticoma_leg_kinematics/CMakeFiles/leg_kinematics_pub.dir/depend
 

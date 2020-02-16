@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dserial_EXPORTS
 
-CXX_INCLUDES = -I/home/ubuntu/TATICOMA/ROS/src/serial/include 
+CXX_INCLUDES = -I/home/ubuntu/taticoma-rev-2/ROS/src/serial/include 
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/TATICOMA/ROS/src
+CMAKE_SOURCE_DIR = /home/ubuntu/taticoma-rev-2/ROS/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/TATICOMA/ROS/build
+CMAKE_BINARY_DIR = /home/ubuntu/taticoma-rev-2/ROS/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/TATICOMA/ROS/build/CMakeFiles /home/ubuntu/TATICOMA/ROS/build/taticoma_gait/CMakeFiles/progress.marks
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/TATICOMA/ROS/build/CMakeFiles 0
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_gait/CMakeFiles/progress.marks
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/taticoma-rev-2/ROS/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/clean
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/preinstall
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/preinstall
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 taticoma_gait/CMakeFiles/gait_kinematics.dir/rule:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/CMakeFiles/gait_kinematics.dir/rule
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f CMakeFiles/Makefile2 taticoma_gait/CMakeFiles/gait_kinematics.dir/rule
 .PHONY : taticoma_gait/CMakeFiles/gait_kinematics.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ gait_kinematics: taticoma_gait/CMakeFiles/gait_kinematics.dir/rule
 
 # fast build rule for target.
 gait_kinematics/fast:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/build
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/build
 .PHONY : gait_kinematics/fast
 
 src/gait.o: src/gait.cpp.o
@@ -188,7 +188,7 @@ src/gait.o: src/gait.cpp.o
 
 # target to build an object file
 src/gait.cpp.o:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o
 .PHONY : src/gait.cpp.o
 
 src/gait.i: src/gait.cpp.i
@@ -197,7 +197,7 @@ src/gait.i: src/gait.cpp.i
 
 # target to preprocess a source file
 src/gait.cpp.i:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.i
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.i
 .PHONY : src/gait.cpp.i
 
 src/gait.s: src/gait.cpp.s
@@ -206,7 +206,7 @@ src/gait.s: src/gait.cpp.s
 
 # target to generate assembly for a file
 src/gait.cpp.s:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.s
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.s
 .PHONY : src/gait.cpp.s
 
 src/gait_kinematics.o: src/gait_kinematics.cpp.o
@@ -215,7 +215,7 @@ src/gait_kinematics.o: src/gait_kinematics.cpp.o
 
 # target to build an object file
 src/gait_kinematics.cpp.o:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
 .PHONY : src/gait_kinematics.cpp.o
 
 src/gait_kinematics.i: src/gait_kinematics.cpp.i
@@ -224,7 +224,7 @@ src/gait_kinematics.i: src/gait_kinematics.cpp.i
 
 # target to preprocess a source file
 src/gait_kinematics.cpp.i:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.i
 .PHONY : src/gait_kinematics.cpp.i
 
 src/gait_kinematics.s: src/gait_kinematics.cpp.s
@@ -233,7 +233,7 @@ src/gait_kinematics.s: src/gait_kinematics.cpp.s
 
 # target to generate assembly for a file
 src/gait_kinematics.cpp.s:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(MAKE) -f taticoma_gait/CMakeFiles/gait_kinematics.dir/build.make taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.s
 .PHONY : src/gait_kinematics.cpp.s
 
 # Help Target
@@ -267,6 +267,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/TATICOMA/ROS/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/taticoma-rev-2/ROS/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

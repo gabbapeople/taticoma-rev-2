@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"taticoma_dynamixel_controller\"
 
-CXX_INCLUDES = -I/home/ubuntu/TATICOMA/ROS/devel/include -I/home/ubuntu/TATICOMA/ROS/src/dynamixel_sdk/include -I/home/ubuntu/TATICOMA/ROS/src/dynamixel_workbench_toolbox/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/ubuntu/taticoma-rev-2/ROS/devel/include -I/home/ubuntu/taticoma-rev-2/ROS/src/dynamixel_sdk/include -I/home/ubuntu/taticoma-rev-2/ROS/src/dynamixel_workbench_toolbox/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
