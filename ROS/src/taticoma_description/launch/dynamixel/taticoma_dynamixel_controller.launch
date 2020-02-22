@@ -1,6 +1,5 @@
 <launch>
 
-    
     <include file="$(find dynamixel_setup)/launch/controller_manager.launch" />
     <include file="$(find dynamixel_setup)/launch/controller_spawner.launch" />
 

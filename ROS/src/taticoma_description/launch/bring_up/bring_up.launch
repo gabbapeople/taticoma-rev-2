@@ -18,10 +18,8 @@
 
 
   <!-- <param name="clearance" type="double" value="0.07815" /> -->
-
   <!-- <param name="joint_upper_limit" type="double" value="1.57" />
   <param name="joint_lower_limit" type="double" value="-1.57" /> -->
-
   <!-- <param name="clearance" type="double" value="0.07815" /> -->
 
   <param name="joint_upper_limit" type="double" value="1.657" />
@@ -40,7 +38,6 @@
   <param name="duration_tripod" type="double" value="1.0" />
 
   <!-- <rosparam param="source_list"> [taticoma_joint_publisher] </rosparam> -->
-
   <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen"/>  -->
   <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen"/> -->
 

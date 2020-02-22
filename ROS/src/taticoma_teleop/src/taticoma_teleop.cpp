@@ -87,9 +87,9 @@ void Teleop::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr &teleop
 					gait_command.scale = teleop->axes[RY];
 					if (gait_command.scale < 0)
 						gait_command.scale *= -1;
-					gait_command.alpha = ((teleop->axes[RX] >= 0) ? -1 : 1) * 0.065 * (1 - gait_command.scale) + 0.19 * teleop->axes[RX];
+					gait_command.alpha = ((teleop->axes[RX] >= 0) ? -1 : 1) * 0.065 * (1 - gait_command.scale) + 0.19 * -1 * teleop->axes[RX];
 
-					//ROS_WARN("fi: %f scale: %f alpha: %f", gait_command.fi, gait_command.scale, gait_command.alpha);
+					ROS_WARN("fi: %f scale: %f alpha: %f", gait_command.fi, gait_command.scale, gait_command.alpha);
 				}
 
 				gait_cmd_pub.publish(gait_command);
