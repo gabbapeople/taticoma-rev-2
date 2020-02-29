@@ -24,12 +24,12 @@
 #ifndef KDL_HP_CHAINIKSOLVERPOS_NR_JL_HPP
 #define KDL_HP_CHAINIKSOLVERPOS_NR_JL_HPP
 
-#include <kdl/chainiksolver.hpp>
 #include <kdl/chainfksolver.hpp>
+#include <kdl/chainiksolver.hpp>
 
 namespace KDL {
 
-    /**
+/**
      * Implementation of a general inverse position kinematics
      * algorithm based on Newton-Raphson iterations to calculate the
      * position transformation from Cartesian to joint space of a general
@@ -37,10 +37,9 @@ namespace KDL {
      *
      * @ingroup KinematicFamily
      */
-    class HP_ChainIkSolverPos_NR_JL : public ChainIkSolverPos
-    {
-    public:
-        /**
+class HP_ChainIkSolverPos_NR_JL : public ChainIkSolverPos {
+public:
+    /**
          * Constructor of the solver, it needs the chain, a forward
          * position kinematics solver and an inverse velocity
          * kinematics solver for that chain.
@@ -57,26 +56,25 @@ namespace KDL {
          *
          * @return
          */
-        HP_ChainIkSolverPos_NR_JL(const Chain& chain,const JntArray& q_min, const JntArray& q_max, ChainFkSolverPos& fksolver,ChainIkSolverVel& iksolver,unsigned int maxiter=100,double eps=1e-6);
-        ~HP_ChainIkSolverPos_NR_JL();
+    HP_ChainIkSolverPos_NR_JL(const Chain& chain, const JntArray& q_min, const JntArray& q_max, ChainFkSolverPos& fksolver, ChainIkSolverVel& iksolver, unsigned int maxiter = 100, double eps = 1e-6);
+    ~HP_ChainIkSolverPos_NR_JL();
 
-        void updateInternalDataStructures() {}
-        virtual int CartToJnt(const JntArray& q_init, const Frame& p_in, JntArray& q_out);
+    void updateInternalDataStructures() {}
+    virtual int CartToJnt(const JntArray& q_init, const Frame& p_in, JntArray& q_out);
 
-    private:
-        const Chain chain;
-        JntArray q_min;
-        JntArray q_max;
-        ChainFkSolverPos& fksolver;
-        ChainIkSolverVel& iksolver;
-        JntArray delta_q;
-        Frame f;
-        Twist delta_twist;
+private:
+    const Chain chain;
+    JntArray q_min;
+    JntArray q_max;
+    ChainFkSolverPos& fksolver;
+    ChainIkSolverVel& iksolver;
+    JntArray delta_q;
+    Frame f;
+    Twist delta_twist;
 
-        unsigned int maxiter;
-        double eps;
-    };
-
+    unsigned int maxiter;
+    double eps;
+};
 }
 
 #endif

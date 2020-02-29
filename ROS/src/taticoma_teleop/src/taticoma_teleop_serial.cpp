@@ -1,7 +1,6 @@
 #include "taticoma_teleop_serial.hpp"
 
-TeleopSerial::TeleopSerial()
-{
+TeleopSerial::TeleopSerial() {
     teleop_joy_pub = node.advertise<taticoma_msgs::TeleopCommand>("/teleop_joy", 1);
 
     // timer = node.createTimer(ros::Rate(100), &TeleopSerial::scanData, this);
@@ -25,14 +24,13 @@ TeleopSerial::TeleopSerial()
 
     receiveFlag = false;
     counter = 0;
-    
+
     ROS_WARN("Node Ready : taticoma_teleop_command");
 
     scanData();
 }
 
-void TeleopSerial::firstPublish()
-{
+void TeleopSerial::firstPublish() {
     teleop_command.buttons[0] = options_mem;
     teleop_command.axes[0] = map((double)lx_mem);
     teleop_command.axes[1] = -1 * map((double)ly_mem);
@@ -50,9 +48,7 @@ void TeleopSerial::firstPublish()
     teleop_joy_pub.publish(teleop_command);
 }
 
-
-double TeleopSerial::map(double x)
-{
+double TeleopSerial::map(double x) {
     if (x == 127.0f) {
         return 0;
     } else {
@@ -60,8 +56,7 @@ double TeleopSerial::map(double x)
     }
 }
 
-void TeleopSerial::setBuffers()
-{
+void TeleopSerial::setBuffers() {
     sendBuffer3 = new uint8_t[3 * sizeof(uint8_t)];
     memset(sendBuffer3, 0, 3 * sizeof(uint8_t));
     readBuffer3 = new uint8_t[3 * sizeof(uint8_t)];
@@ -75,8 +70,7 @@ void TeleopSerial::setBuffers()
     outputMsgBuffer[1].cmd = FEED_GAIT_MODE;
 }
 
-uint8_t* TeleopSerial::prepareSimpleMsg3Bytes(uint8_t* buffer, uint8_t cmd, uint8_t data)
-{
+uint8_t* TeleopSerial::prepareSimpleMsg3Bytes(uint8_t* buffer, uint8_t cmd, uint8_t data) {
     sendChecksum = 0;
     buffer[0] = cmd;
     buffer[1] = data;
@@ -86,16 +80,14 @@ uint8_t* TeleopSerial::prepareSimpleMsg3Bytes(uint8_t* buffer, uint8_t cmd, uint
     return buffer;
 }
 
-void TeleopSerial::sendMsg(uint8_t feed, uint8_t data)
-{
+void TeleopSerial::sendMsg(uint8_t feed, uint8_t data) {
     sendBuffer3 = prepareSimpleMsg3Bytes(sendBuffer3, feed, data);
     uint8_t _sendByte = FEEDBACK;
     _serial.write(&_sendByte, 1);
     _serial.write(sendBuffer3, 3);
 }
 
-void TeleopSerial::parseMsg(uint8_t cmd, uint8_t data)
-{
+void TeleopSerial::parseMsg(uint8_t cmd, uint8_t data) {
     if (cmd == CMD_OPTIONS) {
         if (options_mem != data) {
             options_mem = data;
@@ -181,11 +173,9 @@ void TeleopSerial::parseMsg(uint8_t cmd, uint8_t data)
         teleop_command.p_buttons[1] = r1_mem;
         teleop_joy_pub.publish(teleop_command);
     }
-
 }
 
-bool TeleopSerial::readMsg()
-{
+bool TeleopSerial::readMsg() {
     _serial.read(readBuffer3, 3);
     readChecksum = 0;
     originalChecksum = readBuffer3[2];
@@ -205,8 +195,7 @@ bool TeleopSerial::readMsg()
 void TeleopSerial::scanData(const ros::TimerEvent&) {}
 //void TeleopSerial::scanData() {}
 
-void TeleopSerial::scanData()
-{
+void TeleopSerial::scanData() {
     //ros::Rate sleep_rate(100000);
 
     while (ros::ok) {
@@ -245,8 +234,7 @@ void TeleopSerial::scanData()
     }
 }
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv) {
     ros::init(argc, argv, "taticoma_teleop_command");
     TeleopSerial teleopSerial;
     ros::spin();

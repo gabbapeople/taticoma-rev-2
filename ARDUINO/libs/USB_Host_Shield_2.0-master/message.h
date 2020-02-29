@@ -28,9 +28,9 @@ e-mail   :  support@circuitsathome.com
 
 extern int UsbDEBUGlvl;
 
-void E_Notify(char const * msg, int lvl);
+void E_Notify(char const* msg, int lvl);
 void E_Notify(uint8_t b, int lvl);
-void E_NotifyStr(char const * msg, int lvl);
+void E_NotifyStr(char const* msg, int lvl);
 void E_Notifyc(char c, int lvl);
 
 #ifdef DEBUG_USB_HOST
@@ -63,22 +63,22 @@ void NotifyFail(uint8_t rcode);
 #endif
 
 template <class ERROR_TYPE>
-void ErrorMessage(uint8_t level, char const * msg, ERROR_TYPE rcode = 0) {
+void ErrorMessage(uint8_t level, char const* msg, ERROR_TYPE rcode = 0) {
 #ifdef DEBUG_USB_HOST
-        Notify(msg, level);
-        Notify(PSTR(": "), level);
-        D_PrintHex<ERROR_TYPE > (rcode, level);
-        Notify(PSTR("\r\n"), level);
+    Notify(msg, level);
+    Notify(PSTR(": "), level);
+    D_PrintHex<ERROR_TYPE>(rcode, level);
+    Notify(PSTR("\r\n"), level);
 #endif
 }
 
 template <class ERROR_TYPE>
-void ErrorMessage(char const * msg __attribute__((unused)), ERROR_TYPE rcode __attribute__((unused)) = 0) {
+void ErrorMessage(char const* msg __attribute__((unused)), ERROR_TYPE rcode __attribute__((unused)) = 0) {
 #ifdef DEBUG_USB_HOST
-        Notify(msg, 0x80);
-        Notify(PSTR(": "), 0x80);
-        D_PrintHex<ERROR_TYPE > (rcode, 0x80);
-        Notify(PSTR("\r\n"), 0x80);
+    Notify(msg, 0x80);
+    Notify(PSTR(": "), 0x80);
+    D_PrintHex<ERROR_TYPE>(rcode, 0x80);
+    Notify(PSTR("\r\n"), 0x80);
 #endif
 }
 

@@ -4,8 +4,8 @@
 
 #include <ros/ros.h>
 
-#include "taticoma_msgs/BodyState.h"
 #include "taticoma_msgs/BodyCommand.h"
+#include "taticoma_msgs/BodyState.h"
 #include "taticoma_msgs/GaitCommand.h"
 
 #include "taticoma_msgs/TeleopCommand.h"
@@ -29,31 +29,29 @@
 #define MODE_2 2
 #define MODE_MOVEMENT 3
 
-class Teleop
-{
-  public:
-	Teleop();
+class Teleop {
+public:
+    Teleop();
 
-  private:
-	ros::NodeHandle node;
+private:
+    ros::NodeHandle node;
 
-	taticoma_msgs::BodyState body_state;
-	taticoma_msgs::BodyCommand body_command;
-	taticoma_msgs::GaitCommand gait_command;
+    taticoma_msgs::BodyState body_state;
+    taticoma_msgs::BodyCommand body_command;
+    taticoma_msgs::GaitCommand gait_command;
 
-	taticoma_msgs::TeleopCommand teleop_command;
+    taticoma_msgs::TeleopCommand teleop_command;
 
-	ros::Subscriber teleop_sub;
+    ros::Subscriber teleop_sub;
 
-	ros::Publisher move_body_pub;
-	ros::Publisher body_cmd_pub;
-	ros::Publisher gait_cmd_pub;
+    ros::Publisher move_body_pub;
+    ros::Publisher body_cmd_pub;
+    ros::Publisher gait_cmd_pub;
 
-	double _z;
-	double _leg_radius;
+    double _z;
+    double _leg_radius;
 
-	void teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr &teleop);
-
+    void teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr& teleop);
 };
 
 #endif /* TATICOMA_TELEOP_HPP_ */

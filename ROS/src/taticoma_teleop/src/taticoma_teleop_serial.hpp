@@ -4,8 +4,8 @@
 
 #include <ros/ros.h>
 #include <serial/serial.h>
-#include <std_msgs/String.h>
 #include <std_msgs/Empty.h>
+#include <std_msgs/String.h>
 
 #include "taticoma_msgs/TeleopCommand.h"
 
@@ -29,17 +29,14 @@
 
 #define MSG_BUFFER_SIZE 2
 
-class TeleopSerial
-{
+class TeleopSerial {
 public:
+    TeleopSerial();
 
-	TeleopSerial();
-    
 private:
+    ros::NodeHandle node;
 
-	ros::NodeHandle node;
-
-    ros::Timer timer; 
+    ros::Timer timer;
 
     taticoma_msgs::TeleopCommand teleop_command;
 
@@ -77,7 +74,7 @@ private:
     uint8_t l1_mem = 0;
     uint8_t r1_mem = 0;
     uint8_t triangle_mem = 0;
-    
+
     uint8_t mode = 0;
     uint8_t gait_mode = 0;
 
@@ -98,7 +95,6 @@ private:
 
     void scanData();
     void scanData(const ros::TimerEvent&);
-
 };
 
 #endif /* TATICOMA_TELEOP_SERIAL_HPP_ */

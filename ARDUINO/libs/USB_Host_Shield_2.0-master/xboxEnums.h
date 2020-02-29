@@ -22,44 +22,44 @@
 
 /** Enum used to set special LED modes supported by the Xbox controller. */
 enum LEDModeEnum {
-        ROTATING = 0x0A,
-        FASTBLINK = 0x0B,
-        SLOWBLINK = 0x0C,
-        ALTERNATING = 0x0D,
+    ROTATING = 0x0A,
+    FASTBLINK = 0x0B,
+    SLOWBLINK = 0x0C,
+    ALTERNATING = 0x0D,
 };
 
 /** Used to set the LEDs on the controllers */
 const uint8_t XBOX_LEDS[] PROGMEM = {
-        0x00, // OFF
-        0x02, // LED1
-        0x03, // LED2
-        0x04, // LED3
-        0x05, // LED4
-        0x01, // ALL - Used to blink all LEDs
+    0x00, // OFF
+    0x02, // LED1
+    0x03, // LED2
+    0x04, // LED3
+    0x05, // LED4
+    0x01, // ALL - Used to blink all LEDs
 };
 /** Buttons on the controllers */
 const uint16_t XBOX_BUTTONS[] PROGMEM = {
-        0x0100, // UP
-        0x0800, // RIGHT
-        0x0200, // DOWN
-        0x0400, // LEFT
+    0x0100, // UP
+    0x0800, // RIGHT
+    0x0200, // DOWN
+    0x0400, // LEFT
 
-        0x2000, // BACK
-        0x1000, // START
-        0x4000, // L3
-        0x8000, // R3
+    0x2000, // BACK
+    0x1000, // START
+    0x4000, // L3
+    0x8000, // R3
 
-        0, 0, // Skip L2 and R2 as these are analog buttons
-        0x0001, // L1
-        0x0002, // R1
+    0, 0, // Skip L2 and R2 as these are analog buttons
+    0x0001, // L1
+    0x0002, // R1
 
-        0x0020, // B
-        0x0010, // A
-        0x0040, // X
-        0x0080, // Y
+    0x0020, // B
+    0x0010, // A
+    0x0040, // X
+    0x0080, // Y
 
-        0x0004, // XBOX
-        0x0008, // SYNC
+    0x0004, // XBOX
+    0x0008, // SYNC
 };
 
 #endif

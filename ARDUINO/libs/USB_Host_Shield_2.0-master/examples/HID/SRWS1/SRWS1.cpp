@@ -17,9 +17,9 @@
 
 #include "SRWS1.h"
 
-void SRWS1::ParseHIDData(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf) {
-        if (HIDUniversal::VID != STEELSERIES_VID || HIDUniversal::PID != STEELSERIES_SRWS1_PID) // Make sure the right device is actually connected
-                return;
+void SRWS1::ParseHIDData(USBHID* hid, bool is_rpt_id, uint8_t len, uint8_t* buf) {
+    if (HIDUniversal::VID != STEELSERIES_VID || HIDUniversal::PID != STEELSERIES_SRWS1_PID) // Make sure the right device is actually connected
+        return;
 #if 0
         if (len && buf)  {
                 Notify(PSTR("\r\n"), 0x80);
@@ -29,20 +29,20 @@ void SRWS1::ParseHIDData(USBHID *hid, bool is_rpt_id, uint8_t len, uint8_t *buf)
                 }
         }
 #endif
-        memcpy(&srws1Data, buf, min(len, MFK_CASTUINT8T sizeof(srws1Data)));
+    memcpy(&srws1Data, buf, min(len, MFK_CASTUINT8T sizeof(srws1Data)));
 
-        static SRWS1DataButtons oldButtonState;
-        if (srws1Data.btn.val != oldButtonState.val) { // Check if anything has changed
-                buttonClickState.val = srws1Data.btn.val & ~oldButtonState.val; // Update click state variable
-                oldButtonState.val = srws1Data.btn.val;
-        }
+    static SRWS1DataButtons oldButtonState;
+    if (srws1Data.btn.val != oldButtonState.val) { // Check if anything has changed
+        buttonClickState.val = srws1Data.btn.val & ~oldButtonState.val; // Update click state variable
+        oldButtonState.val = srws1Data.btn.val;
+    }
 }
 
 // See: https://github.com/torvalds/linux/blob/master/drivers/hid/hid-steelseries.c
 void SRWS1::setLeds(uint16_t leds) {
-        uint8_t buf[3];
-        buf[0] = 0x40; // Report ID
-        buf[1] = leds & 0xFF;
-        buf[2] = (leds >> 8) & 0x7F;
-        pUsb->outTransfer(bAddress, epInfo[epInterruptOutIndex].epAddr, sizeof(buf), buf);
+    uint8_t buf[3];
+    buf[0] = 0x40; // Report ID
+    buf[1] = leds & 0xFF;
+    buf[2] = (leds >> 8) & 0x7F;
+    pUsb->outTransfer(bAddress, epInfo[epInterruptOutIndex].epAddr, sizeof(buf), buf);
 }

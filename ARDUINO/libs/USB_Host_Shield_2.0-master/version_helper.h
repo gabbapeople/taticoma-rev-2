@@ -27,14 +27,14 @@ e-mail   :  support@circuitsathome.com
  * Includes fixes for versions as low as 0023, used by Digilent.
  */
 
-#if defined(ARDUINO) && ARDUINO >=100
+#if defined(ARDUINO) && ARDUINO >= 100
 #include <Arduino.h>
 #else
 #include <WProgram.h>
 #include <pins_arduino.h>
 #ifdef __AVR__
-#include <avr/pgmspace.h>
 #include <avr/io.h>
+#include <avr/pgmspace.h>
 #else
 #endif
 #endif
@@ -48,7 +48,7 @@ e-mail   :  support@circuitsathome.com
 #define PROGMEM
 #endif
 #ifndef PGM_P
-#define PGM_P  const char *
+#define PGM_P const char*
 #endif
 #ifndef PSTR
 #define PSTR(str) (str)
@@ -103,7 +103,7 @@ e-mail   :  support@circuitsathome.com
 #define strlcpy_P(dest, src, len) strlcpy((dest), (src), (len))
 #endif
 #ifndef strlen_P
-#define strlen_P(s) strlen((const char *)(s))
+#define strlen_P(s) strlen((const char*)(s))
 #endif
 #ifndef strnlen_P
 #define strnlen_P(str, len) strnlen((str), (len))
@@ -148,26 +148,26 @@ e-mail   :  support@circuitsathome.com
 #define snprintf_P(s, n, ...) ((s), (n), __VA_ARGS__)
 #endif
 #ifndef vsprintf_P
-#define vsprintf_P(s, ...) ((s),__VA_ARGS__)
+#define vsprintf_P(s, ...) ((s), __VA_ARGS__)
 #endif
 #ifndef vsnprintf_P
-#define vsnprintf_P(s, n, ...) ((s), (n),__VA_ARGS__)
+#define vsnprintf_P(s, n, ...) ((s), (n), __VA_ARGS__)
 #endif
 #ifndef fprintf_P
 #define fprintf_P(s, ...) ((s), __VA_ARGS__)
 #endif
 
 #ifndef pgm_read_byte
-#define pgm_read_byte(addr) (*(const unsigned char *)(addr))
+#define pgm_read_byte(addr) (*(const unsigned char*)(addr))
 #endif
 #ifndef pgm_read_word
-#define pgm_read_word(addr) (*(const unsigned short *)(addr))
+#define pgm_read_word(addr) (*(const unsigned short*)(addr))
 #endif
 #ifndef pgm_read_dword
-#define pgm_read_dword(addr) (*(const unsigned long *)(addr))
+#define pgm_read_dword(addr) (*(const unsigned long*)(addr))
 #endif
 #ifndef pgm_read_float
-#define pgm_read_float(addr) (*(const float *)(addr))
+#define pgm_read_float(addr) (*(const float*)(addr))
 #endif
 
 #ifndef pgm_read_byte_near

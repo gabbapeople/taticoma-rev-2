@@ -34,16 +34,11 @@ extern int UsbDEBUGlvl;
 template <class BASE_CLASS, class LEN_TYPE, class OFFSET_TYPE>
 class SinkParser : public BASE_CLASS {
 public:
+    SinkParser(){};
 
-        SinkParser() {
-        };
+    void Initialize(){};
 
-        void Initialize() {
-        };
-
-        void Parse(const LEN_TYPE len, const uint8_t *pbuf, const OFFSET_TYPE &offset) {
-        };
+    void Parse(const LEN_TYPE len, const uint8_t* pbuf, const OFFSET_TYPE& offset){};
 };
-
 
 #endif // __HEXDUMP_H__

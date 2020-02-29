@@ -111,7 +111,7 @@ e-mail   :  support@circuitsathome.com
 #define PROGMEM __attribute__((section(".progmem.data"))) // Workaround for http://gcc.gnu.org/bugzilla/show_bug.cgi?id=34734#c4
 #ifdef PSTR
 #undef PSTR
-#define PSTR(s) (__extension__({static const char __c[] PROGMEM = (s); &__c[0];})) // Copied from pgmspace.h in avr-libc source
+#define PSTR(s) (__extension__({static const char __c[] PROGMEM = (s); &__c[0]; })) // Copied from pgmspace.h in avr-libc source
 #endif
 #endif
 #endif
@@ -154,8 +154,8 @@ e-mail   :  support@circuitsathome.com
 #include <SPI.h> // Use the Arduino SPI library for the Arduino Due, Intel Galileo 1 & 2, Intel Edison or if the SPI library with transaction is available
 #endif
 #ifdef RBL_NRF51822
-#include <nrf_gpio.h>
 #include <SPI_Master.h>
+#include <nrf_gpio.h>
 #define SPI SPI_Master
 #define MFK_CASTUINT8T (uint8_t) // RBLs return type for sizeof needs casting to uint8_t
 #endif

@@ -31,18 +31,18 @@ e-mail   :  support@circuitsathome.com
 #include <stdio.h>
 
 // None of these should ever be included by a driver, or a user's sketch.
-#include "settings.h"
-#include "printhex.h"
-#include "message.h"
-#include "hexdump.h"
-#include "sink_parser.h"
-#include "max3421e.h"
+#include "UsbCore.h"
 #include "address.h"
 #include "avrpins.h"
+#include "confdescparser.h"
+#include "hexdump.h"
+#include "max3421e.h"
+#include "message.h"
+#include "parsetools.h"
+#include "printhex.h"
+#include "settings.h"
+#include "sink_parser.h"
 #include "usb_ch9.h"
 #include "usbhost.h"
-#include "UsbCore.h"
-#include "parsetools.h"
-#include "confdescparser.h"
 
 #endif //_usb_h_
