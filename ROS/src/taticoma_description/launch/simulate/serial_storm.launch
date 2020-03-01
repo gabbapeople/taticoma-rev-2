@@ -5,10 +5,10 @@
   <param name="use_gui" value="$(arg gui)" />
   <param name="rate" value="30" />
 
-  <param name="mbee_port" value="/dev/ttyUSB0" />
+  <param name="mbee_port" value="/dev/UART_mbee" />
   <param name="mbee_baudrate" value="115200" />
 
-  <param name="storm_port" value="/dev/ttyUSB1" />
+  <param name="storm_port" value="/dev/UART_storm" />
   <param name="storm_baudrate" value="115200" />
   
   <node name="taticoma_teleop_serial" pkg="taticoma_teleop" type="taticoma_teleop_serial" output="screen"/>

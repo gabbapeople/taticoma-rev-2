@@ -1,0 +1,6 @@
+# MBEE Amperka -> PL2303 USB-UART
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SYMLINK+="UART_mbee"
+# STORM32 -> FTDI FT232 USB-UART
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="UART_storm"
+# U2D2 Dynamixel -> FTDI USB-UART
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", SYMLINK+="UART_dynamixel"
