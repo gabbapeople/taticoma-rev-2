@@ -90,9 +90,12 @@ void StormController::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPt
                 recenter();
 
         if (teleop->p_buttons[L1] == 1 && teleop->p_buttons[R1] == 0) {
-            _yaw = map(teleop->axes[RX]);
+            _yaw = map(-1 * teleop->axes[RX]);
+            _roll = map(teleop->axes[LX]);
+            _pitch = map(teleop->axes[LY]);
             setYaw(_yaw);
-            ROS_WARN("%d", _yaw);
+            setRoll(_roll);
+            setPitch(_pitch);
         }
     }
 }
