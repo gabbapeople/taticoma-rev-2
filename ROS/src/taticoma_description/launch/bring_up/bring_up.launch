@@ -10,8 +10,8 @@
   <param name="use_gui" value="$(arg gui)" />
   <param name="rate" value="1000" />
 
-  <param name="dynamixel_serial_port" type="string" value="/dev/ttyUSB1"/>
-  <param name="dynamixel_serial_baudrate" type="int" value="1000000"/> 
+  <param name="mbee_port" type="str" value="/dev/UART_mbee" />
+  <param name="mbee_baudrate" type="int" value="115200" />
   
   <param name="leg_radius" type="double" value="0.1224" />
   <param name="clearance" type="double" value="0.1" />
