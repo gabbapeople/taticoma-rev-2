@@ -1390,6 +1390,19 @@ dynamixel_controller/fast:
 .PHONY : dynamixel_controller/fast
 
 #=============================================================================
+# Target rules for targets named taticoma_storm_controller
+
+# Build rule for target.
+taticoma_storm_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 taticoma_storm_controller
+.PHONY : taticoma_storm_controller
+
+# fast build rule for target.
+taticoma_storm_controller/fast:
+	$(MAKE) -f taticoma_storm_controller/CMakeFiles/taticoma_storm_controller.dir/build.make taticoma_storm_controller/CMakeFiles/taticoma_storm_controller.dir/build
+.PHONY : taticoma_storm_controller/fast
+
+#=============================================================================
 # Target rules for targets named taticoma_teleop
 
 # Build rule for target.
@@ -1730,6 +1743,7 @@ help:
 	@echo "... body_kinematics"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... dynamixel_controller"
+	@echo "... taticoma_storm_controller"
 	@echo "... taticoma_teleop"
 	@echo "... taticoma_teleop_serial"
 	@echo "... sensor_msgs_generate_messages_py"

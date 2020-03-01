@@ -220,6 +220,13 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GaitCommand.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolver.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverRequest.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverResponse.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegJointsState.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegPositionState.h
+ /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegsJointsState.h
  /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.hpp
  /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp
  /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.hpp
@@ -268,6 +275,7 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o
  /opt/ros/melodic/include/ros/message.h
  /opt/ros/melodic/include/ros/message_event.h
  /opt/ros/melodic/include/ros/message_forward.h
+ /opt/ros/melodic/include/ros/message_operations.h
  /opt/ros/melodic/include/ros/message_traits.h
  /opt/ros/melodic/include/ros/names.h
  /opt/ros/melodic/include/ros/node_handle.h

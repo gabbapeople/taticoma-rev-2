@@ -6,4 +6,3 @@ uint8[2] buttons
 
 uint8 mode
 uint8 gait_mode
-

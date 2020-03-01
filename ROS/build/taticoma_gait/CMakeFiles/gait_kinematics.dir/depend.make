@@ -219,6 +219,13 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: /usr/include/eigen3
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GaitCommand.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolver.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverRequest.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/GetLegIKSolverResponse.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegJointsState.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegPositionState.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/devel/include/taticoma_msgs/LegsJointsState.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait.hpp
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.cpp
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_gait/src/gait_kinematics.hpp
@@ -267,6 +274,7 @@ taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/message.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/names.h
 taticoma_gait/CMakeFiles/gait_kinematics.dir/src/gait_kinematics.cpp.o: /opt/ros/melodic/include/ros/node_handle.h

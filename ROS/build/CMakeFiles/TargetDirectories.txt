@@ -183,6 +183,14 @@
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_dynamixel_controller/CMakeFiles/edit_cache.dir
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_dynamixel_controller/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_dynamixel_controller/CMakeFiles/install.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/install/local.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/test.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/list_install_components.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/install/strip.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/taticoma_storm_controller.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/edit_cache.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller/CMakeFiles/install.dir
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/CMakeFiles/install/strip.dir
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/CMakeFiles/install.dir
 /home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop/CMakeFiles/taticoma_teleop.dir

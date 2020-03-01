@@ -1,0 +1,19 @@
+<launch>
+
+  <arg name="gui" default="True" />
+
+  <param name="use_gui" value="$(arg gui)" />
+  <param name="rate" value="30" />
+
+  <param name="mbee_port" value="/dev/ttyUSB0" />
+  <param name="mbee_baudrate" value="115200" />
+
+  <param name="storm_port" value="/dev/ttyUSB1" />
+  <param name="storm_baudrate" value="115200" />
+  
+  <node name="taticoma_teleop_serial" pkg="taticoma_teleop" type="taticoma_teleop_serial" output="screen"/>
+  <node name="taticoma_teleop" pkg="taticoma_teleop" type="taticoma_teleop" output="screen"/>
+
+  <node name="taticoma_storm_controller" pkg="taticoma_storm_controller" type="taticoma_storm_controller" output="screen"/>
+
+</launch>

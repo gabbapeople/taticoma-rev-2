@@ -2,11 +2,14 @@
 
 TeleopSerial::TeleopSerial() {
     teleop_joy_pub = node.advertise<taticoma_msgs::TeleopCommand>("/teleop_joy", 1);
-
     // timer = node.createTimer(ros::Rate(100), &TeleopSerial::scanData, this);
 
-    _serial.setPort("/dev/ttyUSB0");
-    _serial.setBaudrate(115200);
+    ros::param::get("/mbee_port", _port);
+    ros::param::get("/mbee_baudrate", _baudrate);
+
+    _serial.setPort(_port);
+    _serial.setBaudrate(_baudrate);
+
     serial::Timeout to = serial::Timeout::simpleTimeout(10);
     _serial.setTimeout(to);
     _serial.open();

@@ -19,21 +19,21 @@ windows.h
 /home/ubuntu/taticoma-rev-2/ROS/src/serial/include/serial/impl/windows.h
 
 /home/ubuntu/taticoma-rev-2/ROS/src/serial/include/serial/serial.h
-limits
--
-vector
--
-string
--
 cstring
--
-sstream
 -
 exception
 -
-stdexcept
+limits
 -
 serial/v8stdint.h
+-
+sstream
+-
+stdexcept
+-
+string
+-
+vector
 -
 
 /home/ubuntu/taticoma-rev-2/ROS/src/serial/include/serial/v8stdint.h

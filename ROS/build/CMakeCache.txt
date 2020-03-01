@@ -487,6 +487,12 @@ taticoma_msgs_DIR:PATH=/home/ubuntu/taticoma-rev-2/ROS/devel/share/taticoma_msgs
 taticoma_msgs_SOURCE_DIR:STATIC=/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_msgs
 
 //Value Computed by CMake
+taticoma_storm_controller_BINARY_DIR:STATIC=/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_storm_controller
+
+//Value Computed by CMake
+taticoma_storm_controller_SOURCE_DIR:STATIC=/home/ubuntu/taticoma-rev-2/ROS/src/taticoma_storm_controller
+
+//Value Computed by CMake
 taticoma_teleop_BINARY_DIR:STATIC=/home/ubuntu/taticoma-rev-2/ROS/build/taticoma_teleop
 
 //Value Computed by CMake
@@ -608,7 +614,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=17
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

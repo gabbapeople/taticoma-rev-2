@@ -1,2 +1,2 @@
-dynamixel_controllers:dynamixel_driver:dynamixel_msgs:dynamixel_setup:serial:taticoma_body_kinematics:taticoma_dynamixel_controller:taticoma_gait:taticoma_joint_publisher:taticoma_leg_kinematics:taticoma_msgs:taticoma_teleop
+dynamixel_controllers:dynamixel_driver:dynamixel_msgs:dynamixel_setup:serial:taticoma_body_kinematics:taticoma_dynamixel_controller:taticoma_gait:taticoma_joint_publisher:taticoma_leg_kinematics:taticoma_msgs:taticoma_storm_controller:taticoma_teleop
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/taticoma-rev-2/ROS/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/taticoma-rev-2/ROS/install -G Unix Makefiles

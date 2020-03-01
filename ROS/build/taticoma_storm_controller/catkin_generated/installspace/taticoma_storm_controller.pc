@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/taticoma-rev-2/ROS/install
+
+Name: taticoma_storm_controller
+Description: Description of taticoma_storm_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: serial std_msgs

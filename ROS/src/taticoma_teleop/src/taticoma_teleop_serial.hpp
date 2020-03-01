@@ -35,14 +35,14 @@ public:
 
 private:
     ros::NodeHandle node;
-
     ros::Timer timer;
 
     taticoma_msgs::TeleopCommand teleop_command;
-
     ros::Publisher teleop_joy_pub;
-
     serial::Serial _serial;
+
+    std::string _port;
+    int _baudrate;
 
     struct Msg {
         uint8_t cmd;

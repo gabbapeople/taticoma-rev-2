@@ -96,7 +96,10 @@ void Teleop::teleopCallback(const taticoma_msgs::TeleopCommand::ConstPtr& teleop
             gait_command.cmd = gait_command.PAUSE;
             gait_cmd_pub.publish(gait_command);
         }
+
+        break;
     }
+
 }
 
 int main(int argc, char** argv) {

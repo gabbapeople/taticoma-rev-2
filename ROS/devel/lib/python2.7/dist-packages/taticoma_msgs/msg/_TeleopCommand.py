@@ -18,7 +18,6 @@ uint8[2] buttons
 
 uint8 mode
 uint8 gait_mode
-
 """
   __slots__ = ['axes','a_buttons','p_buttons','buttons','mode','gait_mode']
   _slot_types = ['float32[4]','float32[2]','uint8[2]','uint8[2]','uint8','uint8']

@@ -26,7 +26,7 @@
 
 #define MODE_0 0
 #define MODE_1 1
-#define MODE_2 2
+#define MODE_CAMERA 2
 #define MODE_MOVEMENT 3
 
 class Teleop {
@@ -43,7 +43,7 @@ private:
     taticoma_msgs::TeleopCommand teleop_command;
 
     ros::Subscriber teleop_sub;
-
+    
     ros::Publisher move_body_pub;
     ros::Publisher body_cmd_pub;
     ros::Publisher gait_cmd_pub;

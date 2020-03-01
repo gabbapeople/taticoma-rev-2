@@ -19,9 +19,9 @@ ros/ros.h
 -
 
 /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/hp_chainiksolverpos_nr_jl.hpp
-kdl/chainiksolver.hpp
--
 kdl/chainfksolver.hpp
+-
+kdl/chainiksolver.hpp
 -
 
 /home/ubuntu/taticoma-rev-2/ROS/src/taticoma_leg_kinematics/src/svd_HH.cpp

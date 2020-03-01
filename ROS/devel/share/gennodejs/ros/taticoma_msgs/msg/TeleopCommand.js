@@ -143,7 +143,6 @@ class TeleopCommand {
     uint8 mode
     uint8 gait_mode
     
-    
     `;
   }
 

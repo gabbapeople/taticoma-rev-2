@@ -5,6 +5,9 @@
   <param name="use_gui" value="$(arg gui)" />
   <param name="rate" value="30" />
 
+  <param name="mbee_port" type="str" value="/dev/ttyUSB0" />
+  <param name="mbee_baudrate" type="int" value="115200" />
+
   <node name="taticoma_teleop_serial" pkg="taticoma_teleop" type="taticoma_teleop_serial" output="screen"/>
   <node name="taticoma_teleop" pkg="taticoma_teleop" type="taticoma_teleop" output="screen"/>
 

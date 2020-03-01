@@ -143,10 +143,10 @@
   "175d84f8f67bfd93cb04e6fb561123b6")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<TeleopCommand>)))
   "Returns full string definition for message of type '<TeleopCommand>"
-  (cl:format cl:nil "~%float32[4] axes~%float32[2] a_buttons~%uint8[2] p_buttons~%uint8[2] buttons~%~%uint8 mode~%uint8 gait_mode~%~%~%~%"))
+  (cl:format cl:nil "~%float32[4] axes~%float32[2] a_buttons~%uint8[2] p_buttons~%uint8[2] buttons~%~%uint8 mode~%uint8 gait_mode~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'TeleopCommand)))
   "Returns full string definition for message of type 'TeleopCommand"
-  (cl:format cl:nil "~%float32[4] axes~%float32[2] a_buttons~%uint8[2] p_buttons~%uint8[2] buttons~%~%uint8 mode~%uint8 gait_mode~%~%~%~%"))
+  (cl:format cl:nil "~%float32[4] axes~%float32[2] a_buttons~%uint8[2] p_buttons~%uint8[2] buttons~%~%uint8 mode~%uint8 gait_mode~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <TeleopCommand>))
   (cl:+ 0
      0 (cl:reduce #'cl:+ (cl:slot-value msg 'axes) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 4)))

@@ -5,4 +5,5 @@ from ._LegIKRequest import *
 from ._LegJointsState import *
 from ._LegPositionState import *
 from ._LegsJointsState import *
+from ._StormCommand import *
 from ._TeleopCommand import *
