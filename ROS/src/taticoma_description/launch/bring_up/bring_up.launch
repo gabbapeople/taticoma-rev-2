@@ -16,34 +16,16 @@
   <param name="leg_radius" type="double" value="0.1224" />
   <param name="clearance" type="double" value="0.1" />
 
-
-  <!-- <param name="clearance" type="double" value="0.07815" /> -->
-  <!-- <param name="joint_upper_limit" type="double" value="1.57" />
-  <param name="joint_lower_limit" type="double" value="-1.57" /> -->
-  <!-- <param name="clearance" type="double" value="0.07815" /> -->
-
   <param name="joint_upper_limit" type="double" value="1.657" />
   <param name="joint_lower_limit" type="double" value="-1.657" />
   <param name="trapezoid_low_radius" type="double" value="0.045" />
   <param name="trapezoid_high_radius" type="double" value="0.0345" />
   <param name="trapezoid_h" type="double" value="0.025" />
 
-  <!-- <param name="joint_upper_limit" type="double" value="1.657" />
-  <param name="joint_lower_limit" type="double" value="-1.657" />
-  <param name="trapezoid_low_radius" type="double" value="0.03" />
-  <param name="trapezoid_high_radius" type="double" value="0.023" />
-  <param name="trapezoid_h" type="double" value="0.02" /> -->
 
   <param name="duration_ripple" type="double" value="1.0" />
   <param name="duration_tripod" type="double" value="1.0" />
 
-  <!-- <rosparam param="source_list"> [taticoma_joint_publisher] </rosparam> -->
-  <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen"/>  -->
-  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen"/> -->
-
-
-  <!-- <node name="taticoma_joint_publisher" pkg="taticoma_joint_publisher" type="taticoma_joint_publisher" output="screen"/> -->
-  
   <node name="taticoma_leg_kinematics" pkg="taticoma_leg_kinematics" type="leg_ik_service" output="screen"/>
   <node name="taticoma_body_kinematics" pkg="taticoma_body_kinematics" type="body_kinematics" output="screen"/>
   <node name="taticoma_gait" pkg="taticoma_gait" type="gait_kinematics" output="screen"/>
@@ -52,7 +34,6 @@
   <node name="taticoma_teleop" pkg="taticoma_teleop" type="taticoma_teleop" output="screen"/>
 
   <include file="$(find taticoma_description)/launch/dynamixel/taticoma_dynamixel_controller.launch" />
-
-  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" /> -->
+  <include file="$(find taticoma_description)/launch/storm/storm.launch" />
 
 </launch>

@@ -44,6 +44,12 @@ rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j2
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 ```
+
+## VNC INSTALL AND USE
+
+```
+remmina
+```
 ## USB dev bind
 
 ```
