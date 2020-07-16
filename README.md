@@ -1,1 +1,4 @@
-taticoma-rev-2
+# taticoma rev2
+The taticoma robot source code.
+
+![ttcm](ttcm.png)
